@@ -1,3 +1,332 @@
+@import url("fonts/stylesheet.css");
+/*-------------------------------- Estilos www.FinanzasOnline.com ----------------------------- */
+a:hover {
+  text-decoration: none; }
+
 body {
   background: #eeeeee;
   font-family: "Source Sans Pro", sans-serif; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+h3, h2 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+footer {
+  background: #002222;
+  border-top: 3px solid #000f0f;
+  text-align: center; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 1em; }
+    footer ul li {
+      display: inline-block;
+      padding: 0 1%;
+      vertical-align: top; }
+      footer ul li a {
+        color: #eeeeee;
+        font-size: 0.9em; }
+      footer ul li a:hover {
+        color: #eeeeee;
+        text-decoration: underline; }
+  footer p {
+    color: #eeeeee;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0.6em 0 0.2em 0; }
+
+/*-------------------------------------Estilos Home.php----------------------------------------- */
+nav {
+  margin-top: 2.6%;
+  padding: 0 !important; }
+
+nav ul {
+  list-style: none;
+  text-align: right; }
+
+nav ul li {
+  border-right: 1px solid #001717;
+  display: inline-block;
+  margin-right: 6%;
+  padding: 0 6% 0 0;
+  vertical-align: middle; }
+
+nav ul li a {
+  color: #eeeeee;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  vertical-align: middle; }
+
+nav ul li a:hover {
+  color: #aacdd8;
+  text-decoration: none; }
+
+nav ul li:nth-child(3n+3) {
+  border: 0;
+  margin-right: auto;
+  padding: 0; }
+
+#btn-registrarse {
+  background: #3bfac6;
+  border: 1px solid #009f74;
+  box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.3), 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 22%; }
+  #btn-registrarse span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #259e7d;
+    font-family: "essairegular";
+    font-size: 2.4em;
+    padding: 0.5em 1em;
+    text-shadow: 0px 0px 1px #6aac9a; }
+
+#caracteristicas {
+  padding: 4em 0 8em 0; }
+  #caracteristicas article {
+    padding: 1.5em 3em 0.5em 3em;
+    text-align: justify; }
+    #caracteristicas article a {
+      font-size: 1.2em;
+      float: right;
+      text-decoration: underline; }
+
+#logo {
+  margin: 0;
+  padding: 1.2em 0; }
+  #logo img {
+    width: 85%; }
+
+#mensaje-bienvenida {
+  border-bottom: 1px solid #e2e2e2;
+  color: #111111;
+  padding: 3em 0;
+  text-align: center; }
+  #mensaje-bienvenida .titulo-principal {
+    font-size: 2.4em;
+    font-weight: 700;
+    line-height: 1.2em;
+    padding: 1em 0; }
+  #mensaje-bienvenida .subtitulo {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 0;
+    text-align: left; }
+
+#menu {
+  background: #002222;
+  border-bottom: 3px solid #000f0f; }
+
+#registro {
+  background: #07b852;
+  border-bottom: 3px solid #027231;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.35);
+  font-family: "essairegular";
+  margin-top: -7.2em;
+  padding-bottom: 2.5em;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+
+#registro-content {
+  padding: 1.5em 0 1em 0; }
+  #registro-content h2 {
+    font-size: 2.5em; }
+  #registro-content h3 {
+    font-size: 1.5em;
+    line-height: 1em; }
+
+#slide {
+  background: radial-gradient(bottom, #0bd15e 18%, #008e3c 59%);
+  background: -webkit-radial-gradient(bottom, #0bd15e 18%, #008e3c 59%);
+  padding: 2.5em 0; }
+
+#texto-banner {
+  font-family: "essairegular";
+  font-size: 11px;
+  padding: 5em 0; }
+  #texto-banner .sub-texto {
+    margin-top: 2.5em; }
+    #texto-banner .sub-texto h3 {
+      font-size: 1.8em;
+      line-height: 0.8em; }
+
+.caracteristicas {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.caracteristicas:nth-child(1) {
+  margin-left: 0 !important; }
+
+.center {
+  margin: 0 4.2% !important; }
+
+.grafico {
+  background: url(../img/bg-icon-grafico.png) center no-repeat; }
+
+.icon {
+  margin: 0 auto;
+  padding: 8.5em 4em;
+  width: 40%; }
+
+.seguridad {
+  background: url(../img/bg-icon-seguridad.png) center no-repeat; }
+
+.separador-footer {
+  color: #eeeeee;
+  padding: 0; }
+
+.titulo-caracteristica {
+  color: #002222;
+  font-size: 1.6em;
+  text-align: center; }
+
+.web {
+  background: url(../img/bg-icon-web.png) center no-repeat; }
+
+/*----------------------------Responsive queries Home.php--------------------------------------- */
+@media (max-width: 1200px) {
+  nav {
+    margin-top: 3%; }
+
+  nav ul li a {
+    font-size: 1.2em; }
+
+  #btn-registrarse {
+    width: 25.5%; }
+
+  #texto-banner {
+    font-size: 9px; }
+    #texto-banner h2 {
+      line-height: 1.2em; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  nav {
+    margin-top: 3.5%; }
+
+  #btn-registrarse {
+    width: 33%; }
+
+  #logo img {
+    width: 100%; }
+
+  #registro {
+    margin-top: -5em; }
+
+  #texto-banner {
+    font-size: 8px;
+    padding: 2.5em 0; }
+    #texto-banner h2 {
+      font-size: 4em; }
+
+  .titulo-principal {
+    font-size: 1.8em !important; }
+
+  .icon {
+    background-size: 80%; }
+
+  .subtitulo {
+    font-size: 1.2em !important; } }
+@media (max-width: 767px) {
+  body {
+    padding: 0; }
+
+  .center, nav ul {
+    margin: 0 !important; }
+
+  nav {
+    margin: 0; }
+
+  nav ul li {
+    border-right: none;
+    border-bottom: 1px solid #001717;
+    display: block;
+    margin: 0;
+    padding: 2em 0 !important;
+    text-align: center; }
+
+  nav ul li a {
+    font-size: 1.6em; }
+
+  #banner-home img {
+    display: block;
+    margin: 0 auto; }
+
+  #btn-registrarse {
+    width: 190px; }
+    #btn-registrarse span {
+      font-size: 1.8em; }
+
+  #logo {
+    background: #000f0f url(../img/logo-portrait.png) center no-repeat;
+    padding: 3.5em 0; }
+    #logo img {
+      display: none;
+      margin: 0 auto;
+      width: 40%; }
+
+  #mensaje-bienvenida {
+    padding: 3em; }
+    #mensaje-bienvenida .titulo-principal {
+      font-size: 1.6em; }
+    #mensaje-bienvenida .subtitulo {
+      font-size: 1.3em; }
+
+  #registro {
+    margin-top: -7em; }
+
+  #registro-content h2 {
+    font-size: 1.8em; }
+  #registro-content h3 {
+    font-size: 1.2em; }
+
+  #texto-banner {
+    padding: 3em;
+    text-align: center; }
+    #texto-banner h3 {
+      font-size: 2.1em; }
+
+  .icon {
+    margin: 3em auto; } }
+@media (max-width: 420px) {
+  #registro-content h2 {
+    font-size: 1.4em; }
+  #registro-content h3 {
+    display: none; }
+
+  #texto-banner h3 {
+    display: none; } }
+@media (max-width: 320px) {
+  footer ul li {
+    display: block; }
+
+  #logo {
+    background: #000f0f url(../img/logo-low-resolution.png) center no-repeat; }
+
+  #registro {
+    margin-top: -5.5em; }
+
+  #registro-content h2 {
+    font-size: 1.3em;
+    line-height: 1em; }
+  #registro-content h3 {
+    display: none; }
+
+  #texto-banner h2 {
+    font-size: 2.2em; }
+  #texto-banner h3 {
+    display: none; }
+
+  .icon {
+    background-size: 75%; }
+
+  .separador-footer {
+    display: none; } }
