@@ -22,7 +22,7 @@
 		$login_link = "login.php";
 		include('includes/menu.php'); ?>
 	</header>
-	<section class="container">
+	<section class="container formulario-registro">
 		<div class="center span11">
 			<div id="titulo-registro">
 				<h2>Registrarse es simple y gratis!</h2>
@@ -31,7 +31,31 @@
 			<section id="form-registro">
 				<form action="#" method="post">
 					<fieldset>
-						<p><label class="pc-form">Nombre</label> <label class="pc-form right">Apellidos</label></p>
+						<p>
+							<div class="ib">
+								<div class="fr-pc">
+									<label for="nombre">Nombre</label>
+								</div>
+								<div class="fr-pc">
+									<input id="nombre" type="text" autofocus placeholder="Ingresa tu nombre">
+								</div>
+							</div>
+							<div class="ib">
+								<div class="fr-pc right">
+									<label for="apellidos">Apellidos</label>
+								</div>
+								<div class="fr-pc right">
+									<input id="apellidos" type="text" placeholder="Ingresa tu apellido">
+								</div>
+							</div>
+						</p>
+						<p><label for="usuario">Usuario</label></p>
+						<p><input id="usuario" type="text" placeholder="Ingresa tu nombre de usuario" /></p>
+						<p><label for="usuario">Contraseña</label></p>
+						<p><input id="usuario" type="text" placeholder="Ingresa tu contraseña" /></p>
+						<p><label for="usuario">E-mail</label></p>
+						<p><input id="usuario" type="text" placeholder="Ingresa tu correo electrónico" /></p>
+						<p><button class="btn-general" id="btn-crear"><span>Crear cuenta</span></button></p>
 					</fieldset>
 				</form>
 			</section>

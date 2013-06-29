@@ -31,7 +31,7 @@
 						<p>FinanzasOnline te permite manejar tu patrimonio desde un solo lugar. Crea presupuestos, monitorea tus ingresos, y mucho más totalmente gratis. <span class="mostrar-video">Mira este video explicativo</span></p>
 					</div>
 					<div id="empieza" class="span3">
-						<a href="registro.php"><div id="btn-empieza"><span>Empieza ya!</span></div></a>
+						<a href="registro.php"><div class="btn-general" id="btn-empieza"><span>Empieza ya!</span></div></a>
 					</div>
 				</div>
 				<div class="video">		
