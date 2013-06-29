@@ -15,7 +15,12 @@
 </head>
 <body>
 	<header>
-		<?php include('includes/menu.html'); ?> <!--Incluyo el menu que sera usado en otras paginas-->
+		<?php 
+		$index_link = "#"; 
+		$acercade_link = "acercade.php";
+		$comofunciona_link = "comofunciona.php";
+		$login_link = "login.php";
+		include('includes/menu.php'); ?> <!--Incluyo el menu que sera usado en otras paginas-->
 		<div id="slide" class="row-fluid">
 			<div class="container">
 				<div class="center span11">
@@ -39,7 +44,7 @@
 					<h3>Descubre los beneficios de ahorrar</h3>
 				</div>
 				<div id="btn-registrarse">
-					<a href="#"><span>Registrarse</span></a>
+					<a href="registro.php"><span>Registrarse</span></a>
 				</div>
 			</div>
 		</div>

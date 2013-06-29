@@ -1,5 +1,7 @@
 @import url("fonts/stylesheet.css");
-/*-------------------------------- Estilos www.FinanzasOnline.com ----------------------------- */
+/*============================================================================================== */
+/*                               Estilos www.FinanzasOnline.com                                 */
+/*============================================================================================== */
 a:hover {
   text-decoration: none; }
 
@@ -41,7 +43,24 @@ footer {
     margin: 0;
     padding: 0.6em 0 0.2em 0; }
 
-/*-------------------------------------Estilos Home.php----------------------------------------- */
+.footer-dos {
+  background: transparent;
+  border-top: 1px solid #e5e5e5; }
+  .footer-dos li {
+    color: #111111; }
+  .footer-dos a, .footer-dos p {
+    color: #111111; }
+  .footer-dos a {
+    font-weight: 700; }
+  .footer-dos a:hover {
+    color: #111111; }
+
+.underline {
+  text-decoration: underline; }
+
+/*============================================================================================== */
+/*                                          Estilos Home.php                                    */
+/*============================================================================================== */
 nav {
   margin-top: 2.6%;
   padding: 0 !important; }
@@ -53,7 +72,7 @@ nav ul {
 nav ul li {
   border-right: 1px solid #001717;
   display: inline-block;
-  margin-right: 6%;
+  margin-right: 4%;
   padding: 0 6% 0 0;
   vertical-align: middle; }
 
@@ -68,7 +87,7 @@ nav ul li a:hover {
   color: #aacdd8;
   text-decoration: none; }
 
-nav ul li:nth-child(3n+3) {
+nav ul li:nth-child(4n+4) {
   border: 0;
   margin-right: auto;
   padding: 0; }
@@ -160,6 +179,10 @@ nav ul li:nth-child(3n+3) {
       font-size: 1.8em;
       line-height: 0.8em; }
 
+.activo {
+  color: #aacdd8;
+  cursor: default; }
+
 .caracteristicas {
   margin: 0 !important;
   padding: 0 !important; }
@@ -193,7 +216,9 @@ nav ul li:nth-child(3n+3) {
 .web {
   background: url(../img/bg-icon-web.png) center no-repeat; }
 
-/*----------------------------Responsive queries Home.php--------------------------------------- */
+/*============================================================================================== */
+/*                                 Responsive queries home.php                                  */
+/*============================================================================================== */
 @media (max-width: 1200px) {
   nav {
     margin-top: 3%; }
@@ -330,3 +355,159 @@ nav ul li:nth-child(3n+3) {
 
   .separador-footer {
     display: none; } }
+/*============================================================================================== */
+/*                                 Estilos comofunciona.php                                     */
+/*============================================================================================== */
+#empieza {
+  margin-top: 3.8em; }
+
+#btn-empieza {
+  background: #11af54 url(../img/icon-flecha.png) 148px center no-repeat;
+  border-radius: 3px;
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.2);
+  float: right;
+  width: 70%; }
+  #btn-empieza span {
+    color: #eeeeee;
+    display: inline-block;
+    font-family: "essairegular";
+    font-size: 1.5em;
+    padding: 0.6em 0 0.6em 8%;
+    vertical-align: middle;
+    width: 100%; }
+
+#funciones {
+  padding: 4em 0; }
+  #funciones article {
+    width: 65%; }
+    #funciones article h3 {
+      color: #111111;
+      text-shadow: 0; }
+    #funciones article p {
+      font-size: 1.3em;
+      line-height: 1.4em;
+      padding-right: 25%;
+      text-align: justify; }
+  #funciones .articulo-derecha h3, #funciones .articulo-derecha p {
+    padding: 0 0 0 25%; }
+  #funciones .derecha-img {
+    float: left; }
+  #funciones figure, #funciones article {
+    display: inline-block;
+    vertical-align: top; }
+  #funciones figure {
+    width: 33%; }
+    #funciones figure img {
+      display: block;
+      margin: 0 auto; }
+
+#titulo-cf {
+  padding: 3em 0; }
+  #titulo-cf h2 {
+    color: #111111;
+    font-size: 3.2em;
+    padding-bottom: 0.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+  #titulo-cf p {
+    font-size: 1.5em;
+    line-height: 1em; }
+  #titulo-cf span {
+    display: inline-block;
+    color: #005353;
+    font-weight: 700;
+    text-decoration: underline; }
+  #titulo-cf span:hover {
+    cursor: pointer; }
+
+.top-cf {
+  border-bottom: 1px solid #e2e2e2; }
+
+.funciones {
+  padding: 4em 0; }
+
+.video {
+  display: none;
+  padding-bottom: 5em; }
+  .video video {
+    border: 5px solid #e7e7e7;
+    margin: 0 15% 0 18%;
+    width: 60%; }
+
+/*============================================================================================== */
+/*                             Responsive queries comofunciona.php                              */
+/*============================================================================================== */
+@media (max-width: 1200px) {
+  #btn-empieza {
+    width: 84%; }
+
+  #titulo-cf h2 {
+    font-size: 2.6em; }
+
+  #funciones figure {
+    margin-top: 0.5em; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  #btn-empieza {
+    background-position: 128px center;
+    width: 100%; }
+    #btn-empieza span {
+      font-size: 1.3em; }
+
+  #titulo-cf h2 {
+    font-size: 2.8em; }
+  #titulo-cf p {
+    font-size: 1.4em;
+    line-height: 1.4em; }
+
+  #funciones figure {
+    margin-top: 4em;
+    width: 24%; } }
+@media (max-width: 767px) {
+  #btn-empieza {
+    background-position: 95% center;
+    float: none;
+    margin: 0 auto; }
+
+  #empieza {
+    margin-top: 0em; }
+
+  #titulo-cf {
+    padding: 4em; }
+    #titulo-cf h2 {
+      font-size: 2.5em; }
+    #titulo-cf p {
+      font-size: 1.3em;
+      line-height: 1.4em; }
+    #titulo-cf span {
+      display: none; }
+
+  .top-cf {
+    padding-bottom: 4em; }
+
+  #funciones {
+    padding-top: 0; }
+    #funciones article {
+      margin: 0 auto;
+      padding: 0 15%; }
+      #funciones article p {
+        padding: 0; }
+    #funciones .articulo-derecha h3, #funciones .articulo-derecha p {
+      padding: 0; }
+    #funciones figure {
+      margin-top: 6em;
+      width: 100%; }
+      #funciones figure img {
+        padding: 0 4em; }
+
+  .video {
+    display: none !important; } }
+@media (max-width: 480px) {
+  #titulo-cf span {
+    display: none; }
+
+  .video {
+    display: none; } }
+@media (max-width: 320px) {
+  #funciones article {
+    padding: 0 15%; }
+  #funciones figure {
+    width: 55%; } }

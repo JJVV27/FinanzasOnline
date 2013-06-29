@@ -6,7 +6,9 @@ $light-green: #07b852
 $btn-texto-color: #259e7d
 $bg-btn-blue: #3bfac6
 
-/*-------------------------------- Estilos www.FinanzasOnline.com -----------------------------*/
+/*==============================================================================================*/
+/*                               Estilos www.FinanzasOnline.com                                 */
+/*==============================================================================================*/
 
 @import url('fonts/stylesheet.css')
 
@@ -50,7 +52,24 @@ footer
 		margin: 0
 		padding: 0.6em 0 0.2em 0
 
-/*-------------------------------------Estilos Home.php-----------------------------------------*/
+.footer-dos
+	background: transparent
+	border-top: 1px solid #e5e5e5
+	li
+		color: #111
+	a, p
+		color: #111
+	a
+		font-weight: 700
+	a:hover
+		color: #111
+
+.underline
+	text-decoration: underline
+
+/*==============================================================================================*/
+/*                                          Estilos Home.php                                    */
+/*==============================================================================================*/
 
 nav
 	margin-top: 2.6%
@@ -63,7 +82,7 @@ nav ul
 nav ul li
 	border-right: 1px solid #001717
 	display: inline-block
-	margin-right: 6%
+	margin-right: 4%
 	padding: 0  6% 0 0
 	vertical-align: middle
 
@@ -78,7 +97,7 @@ nav ul li a:hover
 	color: $blue-logo
 	text-decoration: none
 
-nav ul li:nth-child(3n+3)
+nav ul li:nth-child(4n+4)
 	border: 0
 	margin-right: auto
 	padding: 0
@@ -169,6 +188,10 @@ nav ul li:nth-child(3n+3)
 			font-size: 1.8em
 			line-height: 0.8em
 
+.activo
+	color: $blue-logo
+	cursor: default
+
 .caracteristicas
 	margin: 0 !important
 	padding: 0 !important
@@ -201,7 +224,9 @@ nav ul li:nth-child(3n+3)
 .web
 	background: url(../img/bg-icon-web.png) center no-repeat
 
-/*----------------------------Responsive queries Home.php---------------------------------------*/
+/*==============================================================================================*/
+/*                                 Responsive queries home.php                                  */
+/*==============================================================================================*/
 
 @media (max-width: 1200px)
 	nav
@@ -330,6 +355,169 @@ nav ul li:nth-child(3n+3)
 		
 	.icon
 		background-size: 75%
-		
+
 	.separador-footer
 		display: none
+
+/*==============================================================================================*/
+/*                                 Estilos comofunciona.php                                     */
+/*==============================================================================================*/
+
+#empieza
+	margin-top: 3.8em
+#btn-empieza
+	background: #11af54 url(../img/icon-flecha.png) 148px center no-repeat
+	border-radius: 3px
+	box-shadow: inset 0px 2px 4px rgba(255,255,255,0.4), 2px 2px 2px rgba(0,0,0,0.2)
+	float: right
+	width: 70%
+	span
+		color: #eee
+		display: inline-block
+		font-family: 'essairegular'
+		font-size: 1.5em
+		padding: 0.6em 0 0.6em 8%
+		vertical-align: middle
+		width: 100%
+
+#funciones
+	padding: 4em 0
+	article
+		width: 65%
+		h3
+			color: #111
+			text-shadow: 0
+		p
+			font-size: 1.3em
+			line-height: 1.4em
+			padding-right: 25%
+			text-align: justify
+	.articulo-derecha
+		h3, p
+			padding: 0 0 0 25%
+	.derecha-img
+		float: left
+	figure, article
+		display: inline-block
+		vertical-align: top
+	figure
+		width: 33%
+		img
+			display: block
+			margin: 0 auto
+#titulo-cf
+	padding: 3em 0
+	h2
+		color: #111
+		font-size: 3.2em
+		padding-bottom: 0.2em
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+	p
+		font-size: 1.5em
+		line-height: 1em
+	span
+		display: inline-block
+		color: #005353
+		font-weight: 700
+		text-decoration: underline
+	span:hover
+		cursor: pointer
+
+.top-cf
+	border-bottom: 1px solid #e2e2e2
+
+.funciones
+	padding: 4em 0
+
+.video
+	display: none
+	padding-bottom: 5em
+	video
+		border: 5px solid #e7e7e7
+		margin: 0 15% 0 18%
+		width: 60%
+	
+/*==============================================================================================*/
+/*                             Responsive queries comofunciona.php                              */
+/*==============================================================================================*/
+
+@media (max-width: 1200px)
+	#btn-empieza
+		width: 84%
+	#titulo-cf	
+		h2
+			font-size: 2.6em
+	#funciones
+		figure
+			margin-top: 0.5em
+
+@media (min-width: 768px) and (max-width: 979px)
+	#btn-empieza
+		background-position: 128px center
+		width: 100%
+		span
+			font-size: 1.3em
+	#titulo-cf	
+		h2
+			font-size: 2.8em
+		p
+			font-size: 1.4em
+			line-height: 1.4em
+
+	#funciones
+		figure
+			margin-top: 4em
+			width: 24%
+
+
+@media (max-width: 767px)
+
+	#btn-empieza
+		background-position: 95% center
+		float: none
+		margin: 0 auto
+
+	#empieza
+		margin-top: 0em
+
+	#titulo-cf
+		padding: 4em
+		h2
+			font-size: 2.5em
+		p
+			font-size: 1.3em
+			line-height: 1.4em
+		span
+			display: none
+	.top-cf
+		padding-bottom: 4em
+
+	#funciones
+		padding-top: 0
+		article
+			margin: 0 auto
+			padding: 0 15%
+			p
+				padding: 0
+		.articulo-derecha
+			h3, p
+				padding: 0
+		figure
+			margin-top: 6em
+			width: 100%
+			img
+				padding: 0 4em
+	.video
+		display: none !important
+@media (max-width: 480px)
+	#titulo-cf
+		span
+			display: none
+	.video
+		display: none
+@media (max-width: 320px)
+	#funciones
+		article
+			padding: 0 15%
+		figure
+			width: 55%
