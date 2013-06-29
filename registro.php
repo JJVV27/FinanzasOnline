@@ -22,6 +22,21 @@
 		$login_link = "login.php";
 		include('includes/menu.php'); ?>
 	</header>
+	<section class="container">
+		<div class="center span11">
+			<div id="titulo-registro">
+				<h2>Registrarse es simple y gratis!</h2>
+				<h3>Solo llena el formulario y empieza tu camino al exito financiero</h3>
+			</div>
+			<section id="form-registro">
+				<form action="#" method="post">
+					<fieldset>
+						<p><label class="pc-form">Nombre</label> <label class="pc-form right">Apellidos</label></p>
+					</fieldset>
+				</form>
+			</section>
+		</div>
+	</section>
 	<?php include('includes/footer-dos.html'); ?>
 </body>
 </html>

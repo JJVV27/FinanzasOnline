@@ -511,3 +511,32 @@ nav ul li:nth-child(4n+4) {
     padding: 0 15%; }
   #funciones figure {
     width: 55%; } }
+/*============================================================================================== */
+/*                                      Estilos registro.php                                    */
+/*============================================================================================== */
+#form-registro {
+  border: 5px solid #e9e9e9;
+  margin: 0 auto;
+  padding: 3em;
+  width: 52%; }
+
+#titulo-registro {
+  padding: 3em 20%; }
+  #titulo-registro h2, #titulo-registro h3 {
+    color: #111111;
+    text-shadow: none; }
+  #titulo-registro h2 {
+    font-size: 2.8em;
+    margin: 0;
+    padding: 0; }
+  #titulo-registro h3 {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0; }
+
+.pc-form {
+  display: inline-block;
+  vertical-align: top; }
+
+.right {
+  margin-left: 20%; }
