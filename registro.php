@@ -37,7 +37,7 @@
 									<label for="nombre">Nombre</label>
 								</div>
 								<div class="fr-pc">
-									<input id="nombre" type="text" autofocus placeholder="Ingresa tu nombre">
+									<input id="nombre" required type="text" autofocus placeholder="Ingresa tu nombre">
 								</div>
 							</div>
 							<div class="ib">
@@ -45,16 +45,16 @@
 									<label for="apellidos">Apellidos</label>
 								</div>
 								<div class="fr-pc right">
-									<input id="apellidos" type="text" placeholder="Ingresa tu apellido">
+									<input id="apellidos" required type="text" placeholder="Ingresa tu apellido">
 								</div>
 							</div>
 						</p>
 						<p><label for="usuario">Usuario</label></p>
-						<p><input id="usuario" type="text" placeholder="Ingresa tu nombre de usuario" /></p>
+						<p><input id="usuario" type="text" required placeholder="Ingresa tu nombre de usuario" /></p>
 						<p><label for="usuario">Contraseña</label></p>
-						<p><input id="usuario" type="text" placeholder="Ingresa tu contraseña" /></p>
+						<p><input id="usuario" type="text" required placeholder="Ingresa tu contraseña" /></p>
 						<p><label for="usuario">E-mail</label></p>
-						<p><input id="usuario" type="text" placeholder="Ingresa tu correo electrónico" /></p>
+						<p><input id="usuario" type="email" required placeholder="Ingresa tu correo electrónico" /></p>
 						<p><button class="btn-general" id="btn-crear"><span>Crear cuenta</span></button></p>
 					</fieldset>
 				</form>

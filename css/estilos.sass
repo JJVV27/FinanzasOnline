@@ -52,25 +52,32 @@ footer
 		margin: 0
 		padding: 0.6em 0 0.2em 0
 
-input::-webkit-input-placeholder 
+input::-webkit-input-placeholder
 	color: #777
+	font-size: 0.9em
 	font-weight: 200
 
 input:-moz-placeholder
 	color: #777
+	font-size: 0.9em
 	font-weight: 200
 
 input::-moz-placeholder
 	color: #777
+	font-size: 0.9em
 	font-weight: 200
 
 input:-ms-input-placeholder
 	color: #777
+	font-size: 0.9em
 	font-weight: 200
 
-input:focus
+input:focus, textarea:focus, select:focus
 	box-shadow: none !important
 	outline: none !important
+
+textarea
+	resize: vertical
 
 .btn-general
 	background: #11af54 
@@ -549,14 +556,14 @@ nav ul li:nth-child(4n+4)
 /*                                      Estilos registro.php                                    */
 /*==============================================================================================*/
 
-#btn-crear, #btn-ingresar
+#btn-crear, #btn-ingresar, #btn-enviar
 	border: 1px solid #0c9d4a
 	float: right
 	padding-bottom: 0
 	span
 		padding: 0.7em 1.2em
 
-#form-registro, #form-login
+#form-registro, #form-login, #form-contacto
 	background: #f3f3f3
 	border: 1px solid #e9e9e9
 	border-radius: 0.5em
@@ -566,19 +573,19 @@ nav ul li:nth-child(4n+4)
 	label
 		font-size: 1.6em
 		font-weight: 700
-	input
+	input, textarea
 		background: #eee
 		border-radius: 3px
 		font-size: 1.3em
 		padding: 0.5em 0 0.5em 0.5em
 		width: 100%
-	input:focus
+	input:focus, textarea:focus
 		border: 1px solid $nav-bg-color
 
 #nombre, #apellidos
 	width: 92% !important
 
-#titulo-registro
+#titulo-registro, #titulo-contacto
 	padding: 3em 20%
 	h2,h3
 		color: #111
@@ -739,7 +746,9 @@ nav ul li:nth-child(4n+4)
 			color: #0493ac
 			text-decoration: underline
 
-
+/*==============================================================================================*/
+/*                                      Media queries login.php                                 */
+/*==============================================================================================*/
 
 @media (min-width: 768px) and (max-width: 979px)
 
@@ -796,3 +805,69 @@ nav ul li:nth-child(4n+4)
 	input:-ms-input-placeholder
 		
 		color: #eee
+
+/*==============================================================================================*/
+/*                                     Estilos contacto.php                                     */
+/*==============================================================================================*/
+
+select
+	background: #eee
+	color: #777
+	font-family: 'Source Sans Pro', sans-serif
+	font-size: 1.3em
+	height: auto !important
+	padding: 0.2em 0
+	width: 100%
+
+#btn-enviar
+	margin: 0
+	span
+		padding: 0.7em 1.8em
+
+#email
+	width: 93% !important
+#form-contacto
+	width: 80%
+
+#titulo-contacto
+	padding: 3em 7%
+	h3
+		font-size: 1.8em
+		font-weight: 300
+
+/*==============================================================================================*/
+/*                                      Media queries login.php                                 */
+/*==============================================================================================*/
+
+@media (min-width: 768px) and (max-width: 979px)
+
+#btn-enviar
+	display: block
+	margin: 0 auto
+
+#titulo-contacto
+	h3
+		font-size: 1.5em
+		line-height: 1.2em
+
+@media (max-width: 767px)
+
+#titulo-contacto
+	h3
+		font-size: 1.4em
+		line-height: 1.1em
+
+@media (max-width: 480px)
+
+#email
+	width: 99% !important
+
+#form-contacto
+	width: 60%
+
+#titulo-contacto
+	h2
+		font-size: 2.2em
+		line-height: 1em
+	h3
+		display: none

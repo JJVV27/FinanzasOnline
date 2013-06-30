@@ -45,23 +45,30 @@ footer {
 
 input::-webkit-input-placeholder {
   color: #777777;
+  font-size: 0.9em;
   font-weight: 200; }
 
 input:-moz-placeholder {
   color: #777777;
+  font-size: 0.9em;
   font-weight: 200; }
 
 input::-moz-placeholder {
   color: #777777;
+  font-size: 0.9em;
   font-weight: 200; }
 
 input:-ms-input-placeholder {
   color: #777777;
+  font-size: 0.9em;
   font-weight: 200; }
 
-input:focus {
+input:focus, textarea:focus, select:focus {
   box-shadow: none !important;
   outline: none !important; }
+
+textarea {
+  resize: vertical; }
 
 .btn-general {
   background: #11af54;
@@ -537,45 +544,45 @@ nav ul li:nth-child(4n+4) {
 /*============================================================================================== */
 /*                                      Estilos registro.php                                    */
 /*============================================================================================== */
-#btn-crear, #btn-ingresar {
+#btn-crear, #btn-ingresar, #btn-enviar {
   border: 1px solid #0c9d4a;
   float: right;
   padding-bottom: 0; }
-  #btn-crear span, #btn-ingresar span {
+  #btn-crear span, #btn-ingresar span, #btn-enviar span {
     padding: 0.7em 1.2em; }
 
-#form-registro, #form-login {
+#form-registro, #form-login, #form-contacto {
   background: #f3f3f3;
   border: 1px solid #e9e9e9;
   border-radius: 0.5em;
   margin: 0 auto;
   padding: 2em 3em 1.5em 3em;
   width: 52%; }
-  #form-registro label, #form-login label {
+  #form-registro label, #form-login label, #form-contacto label {
     font-size: 1.6em;
     font-weight: 700; }
-  #form-registro input, #form-login input {
+  #form-registro input, #form-registro textarea, #form-login input, #form-login textarea, #form-contacto input, #form-contacto textarea {
     background: #eeeeee;
     border-radius: 3px;
     font-size: 1.3em;
     padding: 0.5em 0 0.5em 0.5em;
     width: 100%; }
-  #form-registro input:focus, #form-login input:focus {
+  #form-registro input:focus, #form-registro textarea:focus, #form-login input:focus, #form-login textarea:focus, #form-contacto input:focus, #form-contacto textarea:focus {
     border: 1px solid #002222; }
 
 #nombre, #apellidos {
   width: 92% !important; }
 
-#titulo-registro {
+#titulo-registro, #titulo-contacto {
   padding: 3em 20%; }
-  #titulo-registro h2, #titulo-registro h3 {
+  #titulo-registro h2, #titulo-registro h3, #titulo-contacto h2, #titulo-contacto h3 {
     color: #111111;
     text-shadow: none; }
-  #titulo-registro h2 {
+  #titulo-registro h2, #titulo-contacto h2 {
     font-size: 2.8em;
     margin: 0;
     padding: 0; }
-  #titulo-registro h3 {
+  #titulo-registro h3, #titulo-contacto h3 {
     font-size: 1.6em;
     line-height: 1em;
     margin: 0.6em 0 0 0;
@@ -704,6 +711,9 @@ nav ul li:nth-child(4n+4) {
       color: #0493ac;
       text-decoration: underline; }
 
+/*============================================================================================== */
+/*                                      Media queries login.php                                 */
+/*============================================================================================== */
 @media (min-width: 768px) and (max-width: 979px) {
   #btn-ingresar {
     display: block;
@@ -747,3 +757,58 @@ nav ul li:nth-child(4n+4) {
 
   input:-ms-input-placeholder {
     color: #eeeeee; } }
+/*============================================================================================== */
+/*                                     Estilos contacto.php                                     */
+/*============================================================================================== */
+select {
+  background: #eeeeee;
+  color: #777777;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3em;
+  height: auto !important;
+  padding: 0.2em 0;
+  width: 100%; }
+
+#btn-enviar {
+  margin: 0; }
+  #btn-enviar span {
+    padding: 0.7em 1.8em; }
+
+#email {
+  width: 93% !important; }
+
+#form-contacto {
+  width: 80%; }
+
+#titulo-contacto {
+  padding: 3em 7%; }
+  #titulo-contacto h3 {
+    font-size: 1.8em;
+    font-weight: 300; }
+
+/*============================================================================================== */
+/*                                      Media queries login.php                                 */
+/*============================================================================================== */
+#btn-enviar {
+  display: block;
+  margin: 0 auto; }
+
+#titulo-contacto h3 {
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+#titulo-contacto h3 {
+  font-size: 1.4em;
+  line-height: 1.1em; }
+
+#email {
+  width: 99% !important; }
+
+#form-contacto {
+  width: 60%; }
+
+#titulo-contacto h2 {
+  font-size: 2.2em;
+  line-height: 1em; }
+#titulo-contacto h3 {
+  display: none; }
