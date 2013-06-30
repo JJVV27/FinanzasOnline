@@ -22,6 +22,21 @@
 		$login_link = "#";
 		include('includes/menu.php'); ?>
 	</header>
+	<section class="container">
+		<div class="center span11">
+			<section id="form-login">
+				<form action="#" method="post">
+					<fieldset>
+						<p><label for="usuario">Usuario</label></p>
+						<p><input id="usuario" type="text" placeholder="Ingresa tu nombre de usuario" /></p>
+						<p><label for="usuario">Contraseña</label></p>
+						<p><input id="usuario" type="text" placeholder="Ingresa tu contraseña" /></p>
+						<p><button class="btn-general" id="btn-ingresar"><span>Ingresar</span></button> <span class="o-contrasenia"><a href="#">¿Olvidaste tu contraseña?</a></span></p>
+					</fieldset>
+				</form>
+			</section>
+		</div>
+	</section>
 	<?php include('includes/footer-dos.html'); ?>
 </body>
 </html>
