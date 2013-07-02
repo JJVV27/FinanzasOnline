@@ -61,21 +61,21 @@
 					<figure class="icon web"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Web</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case. <a href="#"> Leer más </a>
+						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case. <a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 				<div class="caracteristicas span4">
 						<figure class="icon seguridad"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Seguridad</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="#"> Leer más </a>
+						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 				<div class="caracteristicas span4">
 						<figure class="icon grafico"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Gráficos</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="#"> Leer más </a>
+						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 			</section>

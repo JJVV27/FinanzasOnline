@@ -400,6 +400,7 @@ nav ul li:nth-child(4n+4) {
 
 #btn-empieza {
   background: #11af54 url(../img/icon-flecha.png) 148px center no-repeat;
+  border: 1px solid #0c9d4a;
   float: right;
   width: 70%; }
   #btn-empieza span {
@@ -812,3 +813,100 @@ select {
   line-height: 1em; }
 #titulo-contacto h3 {
   display: none; }
+
+/*============================================================================================== */
+/*                                      Estilos acercade.php                                    */
+/*============================================================================================== */
+#acercade-content {
+  padding: 0; }
+
+#acercade-menu ul {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  list-style: none;
+  margin-top: 0.8em; }
+#acercade-menu ul li {
+  border-bottom: 1px solid #dddddd;
+  color: #111111;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 0.5em 0 0.5em 1.5em; }
+#acercade-menu ul .img-logo-acercade {
+  background: url("../img/logo-acerca.png") center no-repeat;
+  background-size: 90% auto;
+  cursor: default;
+  padding: 5em; }
+
+.acercade-section {
+  padding: 4em 0; }
+
+#historia, #acercade-menu {
+  margin: 0 !important; }
+
+.active-acercade {
+  background: #11af54;
+  border: 1px solid #0c9d4a;
+  color: #eeeeee !important;
+  transition: background 0.5s linear; }
+
+.article h2 {
+  color: #111111;
+  box-shadow: 0 0 0 !important;
+  font-size: 2em;
+  margin: 0 !important;
+  padding: 0 0 0 6% !important; }
+.article p {
+  font-size: 1.2em;
+  padding: 0 0 0 6% !important;
+  text-align: justify; }
+.article ul {
+  padding: 0 0 0 6% !important; }
+.article ul li {
+  font-size: 1.2em; }
+
+.content-ad {
+  margin: 1em 0 1.5em 0; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.pic-finance {
+  background: url(../img/finance.jpg) no-repeat;
+  background-size: 100% auto;
+  border-bottom: 3px solid #000f0f;
+  padding: 15em 0; }
+
+/*============================================================================================== */
+/*                                      Media queries login.php                                 */
+/*============================================================================================== */
+@media (max-width: 1200px) {
+  #acercade-menu ul .img-logo-acercade {
+    padding: 4em; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .pic-finance {
+    background: url(../img/finance-portrait.jpg) no-repeat;
+    padding: 15em 0; }
+
+  #acercade-menu ul .img-logo-acercade {
+    padding: 3em; } }
+@media (max-width: 767px) {
+  .pic-finance {
+    background: url(../img/finance-smartphone.jpg) no-repeat;
+    padding: 15em 0; }
+
+  #acercade-menu ul {
+    display: none; }
+
+  .hide {
+    display: block !important; }
+
+  .article {
+    padding: 3em 4em; } }
+@media (max-width: 420px) {
+  .pic-finance {
+    background: transparent;
+    padding: 0; } }
