@@ -125,18 +125,18 @@ nav ul li a:hover {
   text-decoration: none; }
 
 nav ul li:nth-child(4n+4) {
-  border: 0;
-  margin-right: auto;
+  border: 0 !important;
+  margin-right: auto !important;
   padding: 0; }
 
-#btn-registrarse {
+#btn-registrarse, #btn-cs, .cambiar-btn {
   background: #3bfac6;
   border: 1px solid #009f74;
   box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.3), 3px 3px 5px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   vertical-align: middle;
   width: 22%; }
-  #btn-registrarse span {
+  #btn-registrarse span, #btn-cs span, .cambiar-btn span {
     display: inline-block;
     vertical-align: middle;
     color: #259e7d;
@@ -155,10 +155,10 @@ nav ul li:nth-child(4n+4) {
       float: right;
       text-decoration: underline; }
 
-#logo {
+#logo, #logo-cs {
   margin: 0;
   padding: 1.2em 0; }
-  #logo img {
+  #logo img, #logo-cs img {
     width: 85%; }
 
 #mensaje-bienvenida {
@@ -277,7 +277,7 @@ nav ul li:nth-child(4n+4) {
   #btn-registrarse {
     width: 33%; }
 
-  #logo img {
+  #logo img, #logo-cs img {
     width: 100%; }
 
   #registro {
@@ -304,10 +304,10 @@ nav ul li:nth-child(4n+4) {
   .center, nav ul {
     margin: 0 !important; }
 
-  nav {
+  nav, #menu-app {
     margin: 0; }
 
-  nav ul li {
+  nav ul li, #menu-app ul li {
     border-right: none;
     border-bottom: 1px solid #001717;
     display: block;
@@ -910,3 +910,207 @@ select {
   .pic-finance {
     background: transparent;
     padding: 0; } }
+/*============================================================================================== */
+/*                                        Estilos perfil.php                                    */
+/*============================================================================================== */
+#btn-cs, .cambiar-btn {
+  background: #aacdd8;
+  border: 1px solid #001919;
+  box-shadow: inset 0px 3px 3px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  position: relative;
+  top: 0.7em;
+  width: 100%; }
+  #btn-cs span, .cambiar-btn span {
+    color: #002222;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.3em; }
+
+#configuracion, #info-cont {
+  margin: 4.5em 0 !important;
+  padding: 0 0 !important; }
+
+#configuracion {
+  width: 100% !important; }
+  #configuracion label {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 0.4em; }
+  #configuracion input {
+    background: #eeeeee;
+    color: #777777;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.3em;
+    height: auto !important;
+    padding: 0.2em 0;
+    width: 100%; }
+  #configuracion .select-editable {
+    width: 65% !important; }
+  #configuracion p {
+    padding: 0 5%; }
+    #configuracion p .editar-cg {
+      color: #002222;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.2em;
+      margin-left: 3.5%;
+      text-decoration: underline; }
+  #configuracion .btns .btn-group {
+    margin-left: 5%; }
+
+#img-usuario {
+  display: block;
+  margin-left: -6px;
+  padding: 0 6px; }
+  #img-usuario img {
+    border: 3px solid #333333; }
+  #img-usuario figcaption {
+    text-align: right; }
+    #img-usuario figcaption span {
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: underline; }
+
+#info-content {
+  padding: 0 5% 1.5em 5%; }
+  #info-content h3 {
+    text-shadow: 0px 0px 0px !important;
+    color: #111111;
+    font-size: 1.8em; }
+  #info-content span {
+    color: #002222;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 2%;
+    text-decoration: underline; }
+  #info-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  #info-content ul li {
+    padding: 0.5em 0; }
+  #info-content ul .campo-info, #info-content ul .resp-info {
+    display: block;
+    font-size: 1.2em;
+    margin: 0;
+    text-decoration: none;
+    vertical-align: middle; }
+  #info-content ul .campo-info {
+    font-weight: 700; }
+
+#info-usuario, #configuracion {
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 80%; }
+
+#menu-app {
+  margin: 1.2% 0 0 2.4%;
+  padding: 0 !important; }
+
+#perfil-titulo {
+  background: #f7f7f7;
+  padding: 1.5em 0; }
+  #perfil-titulo h2 {
+    color: #111111;
+    font-size: 2.5em;
+    text-shadow: 0; }
+    #perfil-titulo h2 span {
+      color: #111111;
+      font-size: 0.8em;
+      font-weight: 400;
+      text-shadow: 0; }
+
+.btn-cs {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+.cambiar-btn {
+  background: #002222;
+  border-radius: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  float: right;
+  margin-bottom: 3em;
+  width: 30%; }
+  .cambiar-btn span {
+    color: #eeeeee;
+    font-size: 1.5em; }
+
+.sombra-titulo {
+  background: #e3e3e3 !important;
+  margin: 0 auto;
+  padding: 0.3em 0;
+  width: 95%; }
+
+.sombra-dos-titulo {
+  background: #dadada;
+  border-top: 1px solid lightgrey;
+  margin: 0 auto;
+  padding: 0.2em 0;
+  width: 85%; }
+
+.cg-perfil {
+  display: block;
+  background: #002222;
+  padding: 0 5%; }
+  .cg-perfil legend {
+    border: none;
+    color: #eeeeee;
+    font-size: 1.4em; }
+
+/*============================================================================================= */
+/*                                      Media queries perfil.php                               */
+/*============================================================================================= */
+@media (max-width: 1200px) {
+  #btn-cs span {
+    font-size: 1.2em; }
+
+  #menu-app {
+    margin: 1.2% 0 0 2.1%; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .cambiar-btn {
+    display: block;
+    float: none;
+    margin: 1.5em auto 3em auto;
+    width: 45%; } }
+@media (max-width: 767px) {
+  #btn-cs {
+    width: 50%; }
+    #btn-cs span {
+      font-size: 1.4em; }
+
+  #configuracion-content, #info-cont {
+    padding: 0 8% !important; }
+
+  #info-usuario {
+    width: 100%; }
+
+  #menu-app {
+    padding: 0;
+    margin: 0 !important; }
+
+  #perfil-titulo h2 {
+    font-size: 2.2em;
+    padding: 0 10%; }
+
+  .cambiar-btn {
+    display: block;
+    float: none;
+    margin: 1.5em auto 3em auto;
+    width: 45%; } }
+@media (max-width: 480px) {
+  #perfil-titulo h2 {
+    font-size: 1.9em; } }
+@media (max-width: 420px) {
+  #configuracion .select-editable {
+    width: 90% !important; }
+
+  #perfil-titulo h2 {
+    font-size: 1.6em; }
+  #perfil-titulo span {
+    display: block; } }
+@media (max-width: 420px) {
+  .cambiar-btn {
+    width: 60%; } }

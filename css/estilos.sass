@@ -134,12 +134,12 @@ nav ul li a:hover
 	color: $blue-logo
 	text-decoration: none
 
-nav ul li:nth-child(4n+4)
-	border: 0
-	margin-right: auto
-	padding: 0
+nav ul li:nth-child(4n+4) 
+	border: 0 !important
+	margin-right: auto !important
+	padding: 0 
 
-#btn-registrarse
+#btn-registrarse, #btn-cs, .cambiar-btn
 	background: $bg-btn-blue
 	border: 1px solid #009f74
 	box-shadow: inset 0px 3px 3px rgba(255,255,255,0.3), 3px 3px 5px rgba(0,0,0,0.3)
@@ -165,7 +165,7 @@ nav ul li:nth-child(4n+4)
 			float: right
 			text-decoration: underline
 
-#logo
+#logo, #logo-cs
 	margin: 0
 	padding: 1.2em 0
 	img
@@ -282,7 +282,7 @@ nav ul li:nth-child(4n+4)
 		margin-top: 3.5%
 	#btn-registrarse
 		width: 33%
-	#logo
+	#logo, #logo-cs
 		img
 			width: 100%
 	#registro
@@ -306,9 +306,9 @@ nav ul li:nth-child(4n+4)
 		padding: 0
 	.center, nav ul
 		margin: 0 !important
-	nav
+	nav, #menu-app
 		margin: 0 
-	nav ul li
+	nav ul li, #menu-app ul li
 		border-right: none
 		border-bottom: 1px solid #001717
 		display: block
@@ -979,3 +979,221 @@ select
 	.pic-finance
 		background: transparent
 		padding: 0
+
+/*==============================================================================================*/
+/*                                        Estilos perfil.php                                    */
+/*==============================================================================================*/
+
+#btn-cs, .cambiar-btn
+	background: $blue-logo
+	border: 1px solid #001919
+	box-shadow: inset 0px 3px 3px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.8)
+	border-radius: 3px
+	position: relative
+	top: 0.7em
+	width: 100%
+	span
+		color: $nav-bg-color
+		font-family: 'Source Sans Pro', sans-serif
+		font-size: 1.3em
+
+#configuracion, #info-cont
+	margin: 4.5em 0 !important
+	padding: 0 0 !important
+
+#configuracion
+	width: 100% !important
+	label
+		font-size: 1.4em
+		font-weight: 700
+		margin-bottom: 0.4em
+	input
+		background: #eee
+		color: #777
+		font-family: 'Source Sans Pro', sans-serif
+		font-size: 1.3em
+		height: auto !important
+		padding: 0.2em 0
+		width: 100%
+	.select-editable
+		width: 65% !important
+	p
+		padding: 0 5%
+		.editar-cg
+			color: $nav-bg-color
+			cursor: pointer
+			display: inline-block
+			font-size: 1.2em
+			margin-left: 3.5%
+			text-decoration: underline
+	.btns
+		.btn-group
+			margin-left: 5%
+			.btn		
+
+#img-usuario
+	display: block
+	margin-left: -6px
+	padding: 0 6px
+	img
+		border: 3px solid #333
+	figcaption
+		text-align: right
+		span
+			cursor: pointer
+			font-size: 1em
+			text-decoration: underline
+
+#info-content
+	padding: 0 5% 1.5em 5%
+	h3
+		text-shadow: 0px 0px 0px !important
+		color: #111
+		font-size: 1.8em
+	span
+		color: $nav-bg-color
+		cursor: pointer
+		font-size: 0.8em
+		font-weight: 400
+		margin-left: 2%
+		text-decoration: underline
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+	ul li
+		padding: 0.5em 0
+	ul .campo-info, ul .resp-info
+		display: block
+		font-size: 1.2em
+		margin: 0
+		text-decoration: none
+		vertical-align: middle
+	ul .campo-info
+		font-weight: 700
+
+#info-usuario, #configuracion
+	background: #f3f3f3
+	border: 1px solid #ddd
+	border-radius: 5px
+	width: 80%
+
+#menu-app
+	margin: 1.2% 0 0 2.4%
+	padding: 0 !important
+
+#perfil-titulo
+	background: #f7f7f7
+	padding: 1.5em 0
+	h2
+		color: #111
+		font-size: 2.5em
+		text-shadow: 0
+		span
+			color: #111
+			font-size: 0.8em
+			font-weight: 400
+			text-shadow: 0
+.btn-cs
+	border: 0 
+	margin: 0 
+	padding: 0 
+
+.cambiar-btn
+	background: $nav-bg-color
+	border-radius: 0
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.6)
+	float: right
+	margin-bottom: 3em
+	width: 30%
+	span
+		color: #eee
+		font-size: 1.5em
+
+.sombra-titulo
+	background: #e3e3e3 !important
+	margin: 0 auto
+	padding: 0.3em 0
+	width: 95%
+
+.sombra-dos-titulo
+	background: #dadada
+	border-top: 1px solid #d3d3d3
+	margin: 0 auto
+	padding: 0.2em 0
+	width: 85%
+
+.cg-perfil
+	display: block
+	background: $nav-bg-color
+	padding: 0 5%
+	legend
+		border: none
+		color: #eee
+		font-size: 1.4em
+
+/*=============================================================================================*/
+/*                                      Media queries perfil.php                               */
+/*=============================================================================================*/
+
+@media (max-width: 1200px)
+	#btn-cs
+		span
+			font-size: 1.2em
+
+	#menu-app
+		margin: 1.2% 0 0 2.1%
+
+@media (min-width: 768px) and (max-width: 979px)
+
+	.cambiar-btn
+		display: block
+		float: none
+		margin: 1.5em auto 3em auto
+		width: 45%
+
+@media (max-width: 767px)
+
+	#btn-cs
+		width: 50%
+		span
+			font-size: 1.4em
+	#configuracion-content, #info-cont
+		padding: 0 8% !important	
+
+	#info-usuario
+		width: 100%			
+	#menu-app
+		padding: 0
+		margin: 0 !important
+
+	#perfil-titulo
+		h2
+			font-size: 2.2em
+			padding: 0 10%
+	.cambiar-btn
+		display: block
+		float: none
+		margin: 1.5em auto 3em auto
+		width: 45%
+
+@media (max-width: 480px)
+	#perfil-titulo
+		h2
+			font-size: 1.9em
+
+@media (max-width: 420px)
+	
+	#configuracion
+		.select-editable
+			width: 90% !important
+	#perfil-titulo
+		h2
+			font-size: 1.6em
+		span
+			display: block
+
+@media (max-width: 420px)
+
+	.cambiar-btn
+		width: 60%

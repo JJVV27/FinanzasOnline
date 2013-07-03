@@ -2,6 +2,7 @@ $(document).on("ready", inicio);
 
 function inicio(){
 	activo();
+	$('.btn-return').on("click", noreturn);
 	$('.mostrar-video').on("click", mostrarVideo);
 	$('.link-acercade').on("click", menuad);
 }
@@ -39,6 +40,10 @@ function menuad(){
 		break;
 	}
 
+}
+
+function noreturn(){
+	return false;
 }
 
 function mostrarVideo(){

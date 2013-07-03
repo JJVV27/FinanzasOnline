@@ -9,7 +9,7 @@
 					<li><a href=<?php echo '"'.$index_link.'"'?> class="link">Home</a></li>
 					<li><a href=<?php echo '"'.$acercade_link.'"'?> class="link"><span>Acerca de</span></a></li>
 					<li><a href=<?php echo '"'.$comofunciona_link.'"'?> class="link">Como funciona</a></li>
-					<li><a href=<?php echo '"'.$login_link.'"'?> class="link">Login</a></li>
+					<li><a href=<?php echo '"'.$login_link.'"'?> class="link last-link">Login</a></li>
 				</ul>
 			</nav>
 		</div>
