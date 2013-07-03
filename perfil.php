@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FinanzasOnline | Administracion financiera personal</title>
+	<title>FinanzasOnline | Evelyn Del Pezo</title>
 	<link rel="stylesheet" type="text/css" href="css/libs/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap-responsive.min.css" />

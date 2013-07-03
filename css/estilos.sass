@@ -1082,8 +1082,8 @@ select
 	margin: 1.2% 0 0 2.4%
 	padding: 0 !important
 
-#perfil-titulo
-	background: #f7f7f7
+#perfil-titulo, .app-titulo
+	background: #f4f4f4
 	padding: 1.5em 0
 	h2
 		color: #111
@@ -1111,17 +1111,16 @@ select
 		font-size: 1.5em
 
 .sombra-titulo
-	background: #e3e3e3 !important
+	background: #e5e5e5 !important
 	margin: 0 auto
 	padding: 0.3em 0
-	width: 95%
 
 .sombra-dos-titulo
-	background: #dadada
+	background: #dbdbdb
 	border-top: 1px solid #d3d3d3
 	margin: 0 auto
 	padding: 0.2em 0
-	width: 85%
+	width: 90%
 
 .cg-perfil
 	display: block
@@ -1197,3 +1196,96 @@ select
 
 	.cambiar-btn
 		width: 60%
+
+/*==============================================================================================*/
+/*                                        Estilos general.php                                    */
+/*==============================================================================================*/
+
+#nav
+	top: 1em
+	float: right
+	margin: -2em 0 0 0
+	list-style: none
+	padding: 0
+	position: relative
+	li
+		border: 1px solid #e3e3e3
+		border-top-left-radius: 8px
+		box-shadow: inset 0px -10px 15px -4px rgba(0,0,0,0.1)
+		cursor: pointer
+		display: inline-block
+		margin: 0 !important
+		vertical-align: bottom
+		a
+			display: block
+			color: #111
+			font-size: 1.2em
+			padding: 0.6em 1.6em
+	.current-tab
+		background: $light-green
+		border: 1px solid $dark-green
+		border-top-left-radius: 8px
+		box-shadow: inset 0px 2px 5px rgba(255,255,255,0.3)
+		color: #eee
+.app-titulo
+	padding: 1em 0
+	h2
+		font-size: 2.2em
+	h3	
+		color: #111
+		display: block
+		font-size: 1.4em
+		font-weight: 400
+		margin-top: -1em
+		text-shadow: 0
+
+#loading
+	img
+		margin: 0 auto
+
+/*=============================================================================================*/
+/*                                      Media queries perfil.php                               */
+/*=============================================================================================*/
+
+@media (min-width: 768px) and (max-width: 979px)
+
+	#nav
+		margin: 0
+		padding: 0 10%
+		float: none
+
+@media (max-width: 767px)
+	
+	#nav
+		margin: 0
+		float: none
+		li
+			a
+				padding: 0.5em 1em
+
+	#ajax-content, .app-general-titulos
+		padding-left: 10%
+
+@media (max-width: 480px)
+
+	#nav
+		li
+			border-top-left-radius: 0px !important
+			box-shadow: none !important
+			display: block
+		.current-tab
+			border-top-left-radius: 0px !important
+
+	#ajax-content, .app-general-titulos
+		padding: 0 10%
+
+@media (max-width: 420px)
+
+	.app-titulo
+		h2
+			font-size: 2em
+			line-height: 1em
+		h3
+			font-size: 1.2em
+			line-height: 1em
+			margin-top: 1em

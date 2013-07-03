@@ -1009,14 +1009,14 @@ select {
   margin: 1.2% 0 0 2.4%;
   padding: 0 !important; }
 
-#perfil-titulo {
-  background: #f7f7f7;
+#perfil-titulo, .app-titulo {
+  background: #f4f4f4;
   padding: 1.5em 0; }
-  #perfil-titulo h2 {
+  #perfil-titulo h2, .app-titulo h2 {
     color: #111111;
     font-size: 2.5em;
     text-shadow: 0; }
-    #perfil-titulo h2 span {
+    #perfil-titulo h2 span, .app-titulo h2 span {
       color: #111111;
       font-size: 0.8em;
       font-weight: 400;
@@ -1039,17 +1039,16 @@ select {
     font-size: 1.5em; }
 
 .sombra-titulo {
-  background: #e3e3e3 !important;
+  background: #e5e5e5 !important;
   margin: 0 auto;
-  padding: 0.3em 0;
-  width: 95%; }
+  padding: 0.3em 0; }
 
 .sombra-dos-titulo {
-  background: #dadada;
+  background: #dbdbdb;
   border-top: 1px solid lightgrey;
   margin: 0 auto;
   padding: 0.2em 0;
-  width: 85%; }
+  width: 90%; }
 
 .cg-perfil {
   display: block;
@@ -1114,3 +1113,83 @@ select {
 @media (max-width: 420px) {
   .cambiar-btn {
     width: 60%; } }
+/*============================================================================================== */
+/*                                        Estilos general.php                                    */
+/*============================================================================================== */
+#nav {
+  top: 1em;
+  float: right;
+  margin: -2em 0 0 0;
+  list-style: none;
+  padding: 0;
+  position: relative; }
+  #nav li {
+    border: 1px solid #e3e3e3;
+    border-top-left-radius: 8px;
+    box-shadow: inset 0px -10px 15px -4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 !important;
+    vertical-align: bottom; }
+    #nav li a {
+      display: block;
+      color: #111111;
+      font-size: 1.2em;
+      padding: 0.6em 1.6em; }
+  #nav .current-tab {
+    background: #07b852;
+    border: 1px solid #008e3c;
+    border-top-left-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.3);
+    color: #eeeeee; }
+
+.app-titulo {
+  padding: 1em 0; }
+  .app-titulo h2 {
+    font-size: 2.2em; }
+  .app-titulo h3 {
+    color: #111111;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-top: -1em;
+    text-shadow: 0; }
+
+#loading img {
+  margin: 0 auto; }
+
+/*============================================================================================= */
+/*                                      Media queries perfil.php                               */
+/*============================================================================================= */
+@media (min-width: 768px) and (max-width: 979px) {
+  #nav {
+    margin: 0;
+    padding: 0 10%;
+    float: none; } }
+@media (max-width: 767px) {
+  #nav {
+    margin: 0;
+    float: none; }
+    #nav li a {
+      padding: 0.5em 1em; }
+
+  #ajax-content, .app-general-titulos {
+    padding-left: 10%; } }
+@media (max-width: 480px) {
+  #nav li {
+    border-top-left-radius: 0px !important;
+    box-shadow: none !important;
+    display: block; }
+  #nav .current-tab {
+    border-top-left-radius: 0px !important; }
+
+  #ajax-content, .app-general-titulos {
+    padding: 0 10%; } }
+@media (max-width: 420px) {
+  .app-titulo h2 {
+    font-size: 2em;
+    line-height: 1em; }
+  .app-titulo h3 {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 1em; } }
