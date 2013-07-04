@@ -36,10 +36,12 @@
 	</section>
 	<section class="row-fluid sombra-titulo"></section>
 	<section class="row-fluid sombra-dos-titulo"></section>
-	<section class="container">
-		<div id="ajax-content" class="center span11"> 
+	<section class="row-fluid">
+		<section class="container">
+			<div id="ajax-content" class="center span11"> 
 
-		</div>
+			</div>
+		</section>
 	</section>
 	<?php include('includes/footer-app.html'); ?>
 </body>

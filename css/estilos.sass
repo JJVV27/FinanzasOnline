@@ -1289,3 +1289,249 @@ select
 			font-size: 1.2em
 			line-height: 1em
 			margin-top: 1em
+
+/*==============================================================================================*/
+/*                                        Estilos estado.php                                    */
+/*==============================================================================================*/
+
+#acordeon-estado, .acordeon-estado-derecha
+	background: #f3f3f3
+	border: 1px solid #d7d7d7
+	h3
+		background: $nav-bg-color
+		display: block
+		font-size: 1.2em
+		font-weight: 400
+		margin: 0
+		padding: 0 0 0 15px
+		.editar-info-general
+			cursor: pointer
+			display: inline-block
+			font-size: 0.8em
+			margin-left: 2.5%
+			text-decoration: underline
+		.icon-app
+			background: url('../img/icons.png') 0 center no-repeat
+			height: 16px
+			margin: 0.15em 0 0 54.5%
+			width: 16px
+	p
+		display: block
+		margin: 0
+		padding: 0.5em 15px
+	p:nth-child(2n+2)
+		background: #eee
+	span
+		display: block
+	.pad
+		padding: 0.5em 15px
+	.horizontal-alineado
+		display: inline-block
+		vertical-align: middle
+	.derecha
+		float: right
+	.total
+		border-top: 1px solid #333
+		padding: 0.5em 15px 1em 15px
+
+#estado-general
+	margin: 4.5em 0 
+	padding: 0 
+
+.acordeon-estado-derecha
+	margin: 0 0 4.5em 0
+	width: 100%
+	.icon-alerta-app
+		background: url('../img/icons.png') -50px center no-repeat !important
+		margin: 0.15em 0 0 62% !important
+	.editar-alertas-general
+		float: right
+		margin: 0 25px 0 0 !important
+
+#col-derecha-estado
+	margin: 4.5em  0 0 11%
+
+#agregar-ie, #agregar-presupuesto
+	.btn
+		padding: 0.8em 8.2%
+
+#agregar-presupuesto
+	margin-top: 5.5em !important
+
+#barra-sf
+	margin: 0 auto 1.5em auto
+	width: 90%
+
+#ingresos-barra
+	width: 78%
+
+#egresos-barra
+	width: 22%
+
+#presupuesto-uno-barra
+	width: 35%
+
+#presupuesto-dos-barra
+	width: 65%
+
+#presupuesto-tres-barra
+	width: 15%
+
+#presupuestos
+	padding: 3em 5% 0 5%
+	.presupuesto
+		margin: 0 0 1.5em 0
+		.barra-presupuesto, h4, .monto-presupuesto, .close-presupuesto
+			display: inline-block
+			vertical-align: middle		
+		.barra-presupuesto
+			margin: 0 0 0 2%
+			width: 60%
+		.monto-presupuesto
+			width: 10%
+			font-size: 1.2em
+			margin: 0 0 0 3%
+		.close-presupuesto
+			background: url('../img/icons.png') -25px center no-repeat !important 
+			height: 16px
+			margin: 0
+			width: 16px
+		h4
+			font-weight: 400 !important
+			width: 20%
+
+#presupuestos-content
+	margin-bottom: 3.5em
+.alert
+	margin: 1em 0 !important
+	padding: 0.5em 4.5% 0.5em 1.8%
+	h4, span
+		display: inline-block !important
+		vertical-align: middle
+	span		
+		margin-left: 10px
+		font-size: 1.1em	
+
+.strong
+	font-weight: 700
+
+/*=============================================================================================*/
+/*                                      Media queries estado.php                               */
+/*=============================================================================================*/
+
+@media (max-width: 1200px)
+
+	#acordeon-estado
+		.icon-app
+			margin: 0.15em 0 0 43.5% !important	
+
+	#col-derecha-estado
+		margin: 4.5em  0 0 10%
+
+	#presupuestos
+		h4
+			font-size: 1.1em
+		.barra-presupuesto
+			width: 50%
+		.monto-presupuesto
+			font-size: 1.1em
+			width: 8% !important
+
+	.acordeon-estado-derecha
+		width: 100%
+		.icon-alerta-app
+			margin: 0.15em 0 0 52.5% !important
+
+	.alert
+		padding: 0.5em 6.5% 0.5em 1.8%
+
+
+@media (min-width: 768px) and (max-width: 979px)
+
+	#acordeon-estado
+		.icon-app
+			margin: 0.15em 0 0 26.5% !important	
+
+	#agregar-ie
+		.btn
+			padding: 0.7em 3.1%
+
+	#agregar-presupuesto
+		.btn
+			padding: 0.7em 6.6%
+
+	#presupuestos
+		.barra-presupuesto
+			margin-left: 10% !important
+			width: 45% !important
+		.close-presupuesto
+			margin-left: 4.5% !important
+
+	.acordeon-estado-derecha
+		.icon-alerta-app
+			margin: 0.15em 0 0 42% !important
+
+	.alert
+		span
+			margin-left: 0
+
+@media (max-width: 767px)
+
+	#acordeon-estado
+		.icon-app
+			margin: 0.15em 0 0 3% !important	
+
+	#col-derecha-estado
+		margin: 4.5em  0 0 0
+		padding: 0
+
+	#estado-general, #col-derecha-estado
+		padding: 0 10% 0 2% !important
+
+	.acordeon-estado-derecha
+		.editar-alertas-general
+			float: none
+		.icon-alerta-app
+			margin: 0.15em 0 0 3% !important
+
+@media (max-width: 480px)
+
+	#estado-general, #col-derecha-estado
+		padding: 0 1% 0 2% !important	
+
+	#presupuestos
+		.barra-presupuesto
+			display: block !important
+			margin-left: 0% !important
+			width: 80% !important
+		.close-presupuesto
+			display: none !important
+		.monto-presupuesto
+			float: right
+
+	#agregar-presupuesto
+		.btn
+			padding: 0.7em 2.8%
+
+@media (max-width: 420px)
+
+	#agregar-presupuesto
+		display: none
+
+	#agregar-ie
+		display: none
+
+@media (max-width: 320px)	
+
+	#presupuestos
+		.barra-presupuesto
+			width: 90%
+		.monto-presupuesto
+			float: none !important
+
+	.alert
+		padding: 0.5em 10.5% 0.5em 1.8%
+
+	.acordeon-estado-derecha
+		.editar-alertas-general
+			margin: 0 !important
