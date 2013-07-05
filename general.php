@@ -7,10 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="css/libs/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/libs/jqx.base.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Oleo+Script|Alef:700|Merriweather+Sans:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
 	<script src="js/libs/prefixfree.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/libs/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxnumberinput.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/gettheme.js"></script>
+    <script type="text/javascript" src="js/libs/jqwidgets/generatedata.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="js/libs/jquery.address-1.5.min.js"></script>
 	<script src="js/controlador.js"></script>

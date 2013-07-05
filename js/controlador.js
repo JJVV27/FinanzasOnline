@@ -6,6 +6,10 @@ function inicio(){
 	$('.mostrar-video').on("click", mostrarVideo);
 	$('.link-acercade').on("click", menuad);
 
+   //Datepicker
+
+    //tabs
+
     $("#nav li a").click(function() {
  		
  		var dt = $(this).attr('data-titulo');
@@ -23,14 +27,14 @@ function inicio(){
            	
             }
     });
-    return false;
-    });
- 
-    $("#ajax-content").empty().append("<div id='loading'><img class='loader' src='img/loader.gif' alt='Loading' /></div>");
-    $.ajax({ url: 'ajax/estado.php', success: function(html) {
-            $("#ajax-content").empty().append(html);
-    }
-    });
+	    return false;
+	    });
+	 
+	    $("#ajax-content").empty().append("<div id='loading'><img class='loader' src='img/loader.gif' alt='Loading' /></div>");
+	    $.ajax({ url: 'ajax/estado.php', success: function(html) {
+	            $("#ajax-content").empty().append(html);
+	    }
+	    });
 
 
 }
