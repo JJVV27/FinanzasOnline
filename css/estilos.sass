@@ -101,6 +101,13 @@ textarea
 	a:hover
 		color: #111
 
+.ingreso-incorrecto, .logueo-exitoso
+	padding: 12em
+	p
+		font-size: 2em
+	a
+		font-size: 1.5em
+
 .underline
 	text-decoration: underline
 
@@ -397,8 +404,8 @@ nav ul li:nth-child(4n+4)
 		display: none
 
 /*==============================================================================================*/
-/*                                 Estilos comofunciona.php                                     */
-/*==============================================================================================*/
+/*                                 Estilos comofunciona.php                                   */
+/*=============================================================================================*/
 
 #empieza
 	margin-top: 3.8em
@@ -582,6 +589,9 @@ nav ul li:nth-child(4n+4)
 		width: 100%
 	input:focus, textarea:focus
 		border: 1px solid $nav-bg-color
+	.jqx-validator-error-label
+		font-size: 1.2em
+		font-weight: 400 
 
 #nombre, #apellidos
 	width: 92% !important
@@ -1029,13 +1039,42 @@ select
 	.btns
 		.btn-group
 			margin-left: 5%
+#form-editar, #form-cambiar-imagen
+	legend
+		font-weight: 700
+	label, input
+		display: inline-block
+	label
+		font-size: 1.2em
+		width: 35%
+	.btn-act
+		margin-top: 2em
+	#button-act
+		background: #111
+		border: 1px solid #0a0a0a
+		display: block
+		color: #eee
+		font-size: 1.3em
+		padding: 0.5em 8%
+		margin: 0 auto
 
+#form-cambiar-imagen
+	label
+		width: 25%
+	input, textarea
+		width: 70%
+#fleImagen
+	
+.nav-color
+	color: $nav-bg-color
 #img-usuario
 	display: block
 	margin-left: -6px
 	padding: 0 6px
 	img
 		border: 3px solid #333
+		display: block
+		margin: 0 auto
 	figcaption
 		text-align: right
 		span
@@ -1051,7 +1090,6 @@ select
 		font-size: 1.8em
 	span
 		color: $nav-bg-color
-		cursor: pointer
 		font-size: 0.8em
 		font-weight: 400
 		margin-left: 2%
@@ -1087,12 +1125,12 @@ select
 	h2
 		color: #111
 		font-size: 2.5em
-		text-shadow: 0
+		text-shadow: none
 		span
 			color: #111
 			font-size: 0.8em
 			font-weight: 400
-			text-shadow: 0
+			text-shadow: none
 .btn-cs
 	border: 0 
 	margin: 0 
@@ -1108,6 +1146,9 @@ select
 	span
 		color: #eee
 		font-size: 1.5em
+
+.contenedor
+	display: none
 
 .sombra-titulo
 	background: #e5e5e5 !important
@@ -1137,7 +1178,7 @@ select
 @media (max-width: 1200px)
 	#btn-cs
 		span
-			font-size: 1.2em
+			font-size: 1.2em 
 
 	#menu-app
 		margin: 1.2% 0 0 2.1%
@@ -1590,7 +1631,7 @@ select
 	display: none
 
 /*=============================================================================================*/
-/*                                      Media queries transacciones.php                               */
+/*                                Media queries transacciones.php                              */
 /*=============================================================================================*/
 
 @media (max-width: 1200px)
@@ -1631,3 +1672,92 @@ select
 	#no-soporte
 		display: block
 		margin: -4em 0 3em 0
+
+/*==============================================================================================*/
+/*                                     Estilos tendencias.php                                   */
+/*==============================================================================================*/
+
+#tendencias-top
+	border-bottom: 1px solid #e3e3e3
+	margin: 4.5em 0
+	padding-bottom: 1.5em
+	h3
+		color: #111
+		text-shadow: none
+	.data-tendencias-top
+		margin-top: -0.35em
+		span
+			font-size: 1.4em
+		.right
+			float: right
+
+#data-grid-tendencias
+	margin-left: 11%
+
+#slider-content
+	margin: 2em 0
+
+#meses
+	span
+		margin-left: 3.8%
+	.marzo
+		margin-left: 4.8%
+	.abril
+		margin-left: 5.6%
+	.mayo
+		margin-left: 5.8%
+	.junio
+		margin-left: 5.7%
+	.julio
+		margin-left: 6%
+	.agosto
+		margin-left: 5.7%
+	.oct
+		margin-left: 3%
+	.nov
+		margin-left: 5.2%
+	.dic
+		margin-left: 6.1%
+	.primer-mes
+		margin-left: 0
+
+/*=============================================================================================*/
+/*                                  Media queries tendencias.php                               */
+/*=============================================================================================*/
+
+@media (max-width: 1200px)
+	#data-grid-tendencias
+		margin-left: 10% 
+	#meses
+		span
+			margin-left: 3.8%
+		.febrero
+			margin-left: 2.5% !important
+		.marzo
+			margin-left: 4% !important
+		.abril
+			margin-left: 4.8% !important
+		.mayo
+			margin-left: 5% !important
+		.junio
+			margin-left: 4.7% !important
+		.julio
+			margin-left: 5% !important
+		.agosto
+			margin-left: 4.7% !important
+		.sept
+			margin-left: 2% !important
+		.oct
+			margin-left: 2% !important
+		.nov
+			margin-left: 4.6% !important
+		.dic
+			margin-left: 5.3% !important
+		.primer-mes
+			margin-left: 0
+@media (max-width: 767px)
+
+	#tendencias-top
+		width: 90%
+
+

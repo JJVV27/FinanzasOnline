@@ -6,8 +6,10 @@ function inicio(){
 	$('.mostrar-video').on("click", mostrarVideo);
 	$('.link-acercade').on("click", menuad);
 
-   //Datepicker
+   //slider
 
+
+    
     //tabs
 
     $("#nav li a").click(function() {
@@ -36,9 +38,26 @@ function inicio(){
 	    }
 	    });
 
+	$(".edit").fancybox({
+		'titlePosition'		: 'inside',
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});
+
+	$(".edit").fancybox({
+		'titlePosition'		: 'inside',
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});
+
+	if($('#img-perfil-usuario').attr('src') == 'img/usuarios/fou-1122-avatar.jpg'){
+		$('#cambio-img-perfil').attr('href', '#cambio-imagen-perfil');
+	}else{
+		$('#cambio-img-perfil').attr('href', '#actualizar-imagen-perfil');
+	}
+
 
 }
-
 
 function activo(){
 	$(".link[href^='#']")

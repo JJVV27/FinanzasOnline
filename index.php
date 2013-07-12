@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FinanzasOnline | Administracion financiera personal</title>
-	<link rel="stylesheet" type="text/css" href="css/libs/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap-responsive.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700|Oleo+Script|Alef:700|Merriweather+Sans:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
-	<script src="js/libs/prefixfree.min.js"></script>
-	<script src="js/libs/jquery.js"></script>
-	<script src="js/controlador.js"></script>
+<?php	
+	include('server/conexion.php');
+	include('server/funciones.php');
+	if (isset($_SESSION['estaautenticado']) && $_SESSION['estaautenticado'] == TRUE) {
+		header('Location: perfil.php');
+		exit();
+	}
+?>
+
+<?php 
+	$title = 'Administracion financiera personal';
+	include('includes/head.php'); 
+?>
 </head>
 <body>
 	<header>
@@ -52,30 +51,30 @@
 	<section class="container">
 		<div class="center span11">
 			<section id="mensaje-bienvenida">
-				<p class="titulo-principal">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-				<p class="subtitulo">Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. </p>
-				<p class="subtitulo">And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers.</p>
+				<p class="titulo-principal">Ahora es muy sencillo saber lo que está pasando con su dinero, mantenga bajo control sus finanzas en todo momento.</p>
+				<p class="subtitulo">Empiece hoy mismo a administrar su economía personal, se sorprendera al ver resultados rápidamente y ver como su calidad de vida mejora.  </p>
+				<p class="subtitulo">Utilice FinanzasOnline como herramienta de apoyo, es totalmente gratis y puede accederse desde cualquier lugar con conexión a internet.</p>
 			</section>
 			<section id="caracteristicas" class="row-fluid">
 				<div class="caracteristicas span4">
 					<figure class="icon web"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Web</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case. <a href="comofunciona.php"> Leer más </a>
+						Todos los beneficios de internet como plataforma de desarrollo para la aplicación: su información almacenada de manera segura, puede ser accedida desde cualquier parte del mundo, y a cualquier hora, actualizaciones constantes... <a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 				<div class="caracteristicas span4">
 						<figure class="icon seguridad"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Seguridad</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="comofunciona.php"> Leer más </a>
+						No solo obtendrá un respaldo de toda su información, sino que además estara segura en la nube. Nadie mas que usted tendrá acceso a su cuenta...<a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 				<div class="caracteristicas span4">
 						<figure class="icon grafico"></figure>
 					<article>
 						<h4 class="titulo-caracteristica">Gráficos</h4>
-						Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case.<a href="comofunciona.php"> Leer más </a>
+						A veces es mas fácil visualizar los datos que leerlos, es por eso que FinanzasOnline ofrece una variedad de gráficos en su interfaz que le permitiran entender mejor su progreso financiero.<a href="comofunciona.php"> Leer más </a>
 					</article>
 				</div>
 			</section>

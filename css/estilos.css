@@ -92,6 +92,13 @@ textarea {
   .footer-dos a:hover {
     color: #111111; }
 
+.ingreso-incorrecto, .logueo-exitoso {
+  padding: 12em; }
+  .ingreso-incorrecto p, .logueo-exitoso p {
+    font-size: 2em; }
+  .ingreso-incorrecto a, .logueo-exitoso a {
+    font-size: 1.5em; }
+
 .underline {
   text-decoration: underline; }
 
@@ -393,8 +400,8 @@ nav ul li:nth-child(4n+4) {
   .separador-footer {
     display: none; } }
 /*============================================================================================== */
-/*                                 Estilos comofunciona.php                                     */
-/*============================================================================================== */
+/*                                 Estilos comofunciona.php                                   */
+/*============================================================================================= */
 #empieza {
   margin-top: 3.8em; }
 
@@ -570,6 +577,9 @@ nav ul li:nth-child(4n+4) {
     width: 100%; }
   #form-registro input:focus, #form-registro textarea:focus, #form-login input:focus, #form-login textarea:focus, #form-contacto input:focus, #form-contacto textarea:focus {
     border: 1px solid #002222; }
+  #form-registro .jqx-validator-error-label, #form-login .jqx-validator-error-label, #form-contacto .jqx-validator-error-label {
+    font-size: 1.2em;
+    font-weight: 400; }
 
 #nombre, #apellidos {
   width: 92% !important; }
@@ -958,12 +968,40 @@ select {
   #configuracion .btns .btn-group {
     margin-left: 5%; }
 
+#form-editar legend, #form-cambiar-imagen legend {
+  font-weight: 700; }
+#form-editar label, #form-editar input, #form-cambiar-imagen label, #form-cambiar-imagen input {
+  display: inline-block; }
+#form-editar label, #form-cambiar-imagen label {
+  font-size: 1.2em;
+  width: 35%; }
+#form-editar .btn-act, #form-cambiar-imagen .btn-act {
+  margin-top: 2em; }
+#form-editar #button-act, #form-cambiar-imagen #button-act {
+  background: #111111;
+  border: 1px solid #0a0a0a;
+  display: block;
+  color: #eeeeee;
+  font-size: 1.3em;
+  padding: 0.5em 8%;
+  margin: 0 auto; }
+
+#form-cambiar-imagen label {
+  width: 25%; }
+#form-cambiar-imagen input, #form-cambiar-imagen textarea {
+  width: 70%; }
+
+.nav-color {
+  color: #002222; }
+
 #img-usuario {
   display: block;
   margin-left: -6px;
   padding: 0 6px; }
   #img-usuario img {
-    border: 3px solid #333333; }
+    border: 3px solid #333333;
+    display: block;
+    margin: 0 auto; }
   #img-usuario figcaption {
     text-align: right; }
     #img-usuario figcaption span {
@@ -979,7 +1017,6 @@ select {
     font-size: 1.8em; }
   #info-content span {
     color: #002222;
-    cursor: pointer;
     font-size: 0.8em;
     font-weight: 400;
     margin-left: 2%;
@@ -1015,12 +1052,12 @@ select {
   #perfil-titulo h2, .app-titulo h2 {
     color: #111111;
     font-size: 2.5em;
-    text-shadow: 0; }
+    text-shadow: none; }
     #perfil-titulo h2 span, .app-titulo h2 span {
       color: #111111;
       font-size: 0.8em;
       font-weight: 400;
-      text-shadow: 0; }
+      text-shadow: none; }
 
 .btn-cs {
   border: 0;
@@ -1037,6 +1074,9 @@ select {
   .cambiar-btn span {
     color: #eeeeee;
     font-size: 1.5em; }
+
+.contenedor {
+  display: none; }
 
 .sombra-titulo {
   background: #e5e5e5 !important;
@@ -1467,7 +1507,7 @@ select {
   display: none; }
 
 /*============================================================================================= */
-/*                                      Media queries transacciones.php                               */
+/*                                Media queries transacciones.php                              */
 /*============================================================================================= */
 @media (max-width: 1200px) {
   #right-info-tr {
@@ -1503,3 +1543,85 @@ select {
   #no-soporte {
     display: block;
     margin: -4em 0 3em 0; } }
+/*============================================================================================== */
+/*                                     Estilos tendencias.php                                   */
+/*============================================================================================== */
+#tendencias-top {
+  border-bottom: 1px solid #e3e3e3;
+  margin: 4.5em 0;
+  padding-bottom: 1.5em; }
+  #tendencias-top h3 {
+    color: #111111;
+    text-shadow: none; }
+  #tendencias-top .data-tendencias-top {
+    margin-top: -0.35em; }
+    #tendencias-top .data-tendencias-top span {
+      font-size: 1.4em; }
+    #tendencias-top .data-tendencias-top .right {
+      float: right; }
+
+#data-grid-tendencias {
+  margin-left: 11%; }
+
+#slider-content {
+  margin: 2em 0; }
+
+#meses span {
+  margin-left: 3.8%; }
+#meses .marzo {
+  margin-left: 4.8%; }
+#meses .abril {
+  margin-left: 5.6%; }
+#meses .mayo {
+  margin-left: 5.8%; }
+#meses .junio {
+  margin-left: 5.7%; }
+#meses .julio {
+  margin-left: 6%; }
+#meses .agosto {
+  margin-left: 5.7%; }
+#meses .oct {
+  margin-left: 3%; }
+#meses .nov {
+  margin-left: 5.2%; }
+#meses .dic {
+  margin-left: 6.1%; }
+#meses .primer-mes {
+  margin-left: 0; }
+
+/*============================================================================================= */
+/*                                  Media queries tendencias.php                               */
+/*============================================================================================= */
+@media (max-width: 1200px) {
+  #data-grid-tendencias {
+    margin-left: 10%; }
+
+  #meses span {
+    margin-left: 3.8%; }
+  #meses .febrero {
+    margin-left: 2.5% !important; }
+  #meses .marzo {
+    margin-left: 4% !important; }
+  #meses .abril {
+    margin-left: 4.8% !important; }
+  #meses .mayo {
+    margin-left: 5% !important; }
+  #meses .junio {
+    margin-left: 4.7% !important; }
+  #meses .julio {
+    margin-left: 5% !important; }
+  #meses .agosto {
+    margin-left: 4.7% !important; }
+  #meses .sept {
+    margin-left: 2% !important; }
+  #meses .oct {
+    margin-left: 2% !important; }
+  #meses .nov {
+    margin-left: 4.6% !important; }
+  #meses .dic {
+    margin-left: 5.3% !important; }
+  #meses .primer-mes {
+    margin-left: 0; } }
+@media (max-width: 767px) {
+  #tendencias-top {
+    width: 90%; } }
