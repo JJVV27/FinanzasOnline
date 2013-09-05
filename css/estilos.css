@@ -53,7 +53,7 @@ input:-moz-placeholder {
   font-size: 0.9em;
   font-weight: 200; }
 
-input::-moz-placeholder {
+input::-o-placeholder {
   color: #777777;
   font-size: 0.9em;
   font-weight: 200; }
@@ -952,8 +952,30 @@ select {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.3em;
     height: auto !important;
-    padding: 0.2em 0;
-    width: 100%; }
+    padding: 0.2em 0 0.2em 7%;
+    width: 93%; }
+  #configuracion .input-bg {
+    background: #dddddd;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #666666;
+    cursor: default;
+    font-size: 1.4em;
+    padding: 0.14em 2%;
+    position: relative;
+    top: 0.52em; }
+  #configuracion .moneda-bg {
+    padding: 0.127em 2%;
+    top: 0.53em; }
+  #configuracion .mail-bg {
+    background: #dddddd url("../img/icono-mail.png") center no-repeat;
+    border: 1px solid #cccccc;
+    padding: 0.14em 6%; }
+  #configuracion .input {
+    display: inline-block;
+    margin-top: -1em;
+    vertical-align: top; }
   #configuracion .select-editable {
     width: 65% !important; }
   #configuracion p {
@@ -968,23 +990,97 @@ select {
   #configuracion .btns .btn-group {
     margin-left: 5%; }
 
-#form-editar legend, #form-cambiar-imagen legend {
-  font-weight: 700; }
-#form-editar label, #form-editar input, #form-cambiar-imagen label, #form-cambiar-imagen input {
-  display: inline-block; }
-#form-editar label, #form-cambiar-imagen label {
-  font-size: 1.2em;
-  width: 35%; }
-#form-editar .btn-act, #form-cambiar-imagen .btn-act {
-  margin-top: 2em; }
-#form-editar #button-act, #form-cambiar-imagen #button-act {
-  background: #111111;
-  border: 1px solid #0a0a0a;
-  display: block;
-  color: #eeeeee;
-  font-size: 1.3em;
-  padding: 0.5em 8%;
-  margin: 0 auto; }
+.tbl-muestra, .tbl-muestra-ct {
+  background: #eeeeee;
+  border-top: 3px solid #002222;
+  border-bottom: 3px solid #002222;
+  display: none;
+  margin: 3em 0;
+  padding: 1.5em 0; }
+
+#tbl-egresos-fijos {
+  text-align: center;
+  padding: 0 5%;
+  width: 100%; }
+  #tbl-egresos-fijos thead th {
+    border: none !important; }
+    #tbl-egresos-fijos thead th .tbl-title {
+      display: block;
+      font-size: 1.5em;
+      padding-bottom: 1em; }
+  #tbl-egresos-fijos thead tr {
+    border-bottom: 1px solid #333333; }
+    #tbl-egresos-fijos thead tr td {
+      font-size: 1.2em;
+      font-weight: 700;
+      padding: 0.8em 0; }
+  #tbl-egresos-fijos tbody tr td .edt-elmn {
+    display: block;
+    text-decoration: underline; }
+  #tbl-egresos-fijos tbody tr:nth-child(2n+2) {
+    background: #e7e7e7; }
+
+#agregar-egreso legend {
+  border: none; }
+#agregar-egreso input {
+  color: #111111 !important;
+  padding: 0.16em 0 !important; }
+
+#nuevo-egreso {
+  display: none; }
+  #nuevo-egreso input:focus, #nuevo-egreso textarea:focus, #nuevo-egreso select:focus {
+    box-shadow: none !important;
+    border: 1px solid #cccccc !important;
+    outline: none !important; }
+  #nuevo-egreso .input-monto {
+    padding-left: 10% !important;
+    margin-top: -1.4em; }
+  #nuevo-egreso .input-bg {
+    top: 0.35em; }
+  #nuevo-egreso .monto-pago {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    width: 42%; }
+  #nuevo-egreso .btn-agregar {
+    background: #222222;
+    border: 2px solid #111111;
+    color: #eeeeee;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.3em 6%; }
+
+.form-editar, #form-cambiar-imagen {
+  padding: 0 5%; }
+  .form-editar legend, #form-cambiar-imagen legend {
+    font-weight: 700;
+    text-align: center; }
+  .form-editar label, .form-editar input, #form-cambiar-imagen label, #form-cambiar-imagen input {
+    display: inline-block; }
+  .form-editar label, #form-cambiar-imagen label {
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 30%; }
+  .form-editar input, #form-cambiar-imagen input {
+    width: 60%; }
+  .form-editar .btn-act, #form-cambiar-imagen .btn-act {
+    margin-top: 2em; }
+  .form-editar #button-act, .form-editar .button-reg, #form-cambiar-imagen #button-act, #form-cambiar-imagen .button-reg {
+    background: #111111;
+    border: 1px solid #0a0a0a;
+    display: block;
+    color: #eeeeee;
+    font-size: 1.3em;
+    padding: 0.5em 8%;
+    margin: 0 auto; }
+  .form-editar .select-categoria, #form-cambiar-imagen .select-categoria {
+    width: 64%; }
+  .form-editar .radio-tr, #form-cambiar-imagen .radio-tr {
+    position: relative;
+    top: -2px;
+    width: 6%; }
+  .form-editar .radio-tr-right, #form-cambiar-imagen .radio-tr-right {
+    margin-left: 5%; }
 
 #form-cambiar-imagen label {
   width: 25%; }
@@ -1046,6 +1142,16 @@ select {
   margin: 1.2% 0 0 2.4%;
   padding: 0 !important; }
 
+#nueva-categoria {
+  display: none; }
+  #nueva-categoria .btn-agregar {
+    background: #222222;
+    border: 2px solid #111111;
+    color: #eeeeee;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.3em 6%; }
+
 #perfil-titulo, .app-titulo {
   background: #f4f4f4;
   padding: 1.5em 0; }
@@ -1064,6 +1170,12 @@ select {
   margin: 0;
   padding: 0; }
 
+.btn-default, .btn-default:hover {
+  background: #222222;
+  border: 1px solid #111111;
+  color: #eeeeee;
+  cursor: default !important; }
+
 .cambiar-btn {
   background: #002222;
   border-radius: 0;
@@ -1077,6 +1189,21 @@ select {
 
 .contenedor {
   display: none; }
+
+.form-pop-up {
+  padding: 0.5em 0; }
+
+.form-pop {
+  border-right: none; }
+
+.nuevo-cg {
+  display: block !important;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 5%;
+  padding: 1em 0 0 0;
+  text-decoration: underline; }
 
 .sombra-titulo {
   background: #e5e5e5 !important;
@@ -1198,6 +1325,33 @@ select {
 #loading img {
   margin: 0 auto; }
 
+#agregarpresupuesto .btn-agregar {
+  background: #222222;
+  border: 2px solid #111111;
+  color: #eeeeee;
+  display: block;
+  font-size: 1.2em;
+  margin: 0em auto 0 auto !important;
+  padding: 0.3em 6%; }
+#agregarpresupuesto .label-info {
+  background: transparent;
+  display: block;
+  margin: 1.5em 0 0 0; }
+#agregarpresupuesto .monto-presupuesto, #agregarpresupuesto .label-monto-presupuesto {
+  display: inline-block; }
+#agregarpresupuesto .monto-presupuesto {
+  left: 10px;
+  position: relative;
+  top: 5px;
+  width: 35%; }
+#agregarpresupuesto .select-editable, #agregarpresupuesto .label-seleccionar-categoria {
+  display: inline-block; }
+#agregarpresupuesto .select-editable {
+  left: 10px;
+  position: relative;
+  top: 5px;
+  width: 60%; }
+
 /*============================================================================================= */
 /*                                      Media queries perfil.php                               */
 /*============================================================================================= */
@@ -1303,20 +1457,10 @@ select {
   margin: 0 auto 1.5em auto;
   width: 90%; }
 
-#ingresos-barra {
-  width: 78%; }
-
-#egresos-barra {
-  width: 22%; }
-
-#presupuesto-uno-barra {
-  width: 35%; }
-
-#presupuesto-dos-barra {
-  width: 65%; }
-
-#presupuesto-tres-barra {
-  width: 15%; }
+#no-alertas {
+  color: #333333;
+  font-size: 1.2em;
+  padding: 1em; }
 
 #presupuestos {
   padding: 3em 5% 0 5%; }
@@ -1454,35 +1598,109 @@ select {
 /*                                   Estilos transacciones.php                                  */
 /*============================================================================================== */
 #agregar-tr {
-  margin-top: -4em; }
-  #agregar-tr a {
-    float: right; }
+  position: relative;
+  top: 1em;
+  z-index: 1; }
 
-#data-grid {
-  margin-top: -3em !important;
-  padding: 0 3% 0 0; }
+#tbl-transacciones {
+  margin: 0em 0 2.5em 0; }
 
-#transacciones-top {
-  margin: 4.5em 0; }
-  #transacciones-top label, #transacciones-top input, #transacciones-top a, #transacciones-top .top-tr {
+#tbl-resgistros-tr {
+  text-align: center; }
+  #tbl-resgistros-tr table {
+    border: 1px solid #002222; }
+    #tbl-resgistros-tr table thead tr {
+      background: #002222;
+      color: #eeeeee; }
+      #tbl-resgistros-tr table thead tr .tbl-fecha {
+        border-right: 1px solid #eeeeee;
+        width: 10%; }
+      #tbl-resgistros-tr table thead tr .tbl-descripcion {
+        border-right: 1px solid #eeeeee;
+        width: 30%; }
+      #tbl-resgistros-tr table thead tr .tbl-categoria {
+        border-right: 1px solid #eeeeee;
+        width: 20%; }
+      #tbl-resgistros-tr table thead tr .tbl-monto {
+        border-right: 1px solid #eeeeee;
+        width: 10%; }
+      #tbl-resgistros-tr table thead tr .tbl-ee {
+        width: 10%; }
+    #tbl-resgistros-tr table tbody tr {
+      background: #eeeeee;
+      color: #222222; }
+      #tbl-resgistros-tr table tbody tr .tbl-fecha-contenido {
+        border-right: 1px solid #cccccc; }
+      #tbl-resgistros-tr table tbody tr .tbl-descripcion-contenido {
+        border-right: 1px solid #cccccc;
+        text-align: left; }
+      #tbl-resgistros-tr table tbody tr .tbl-categoria-contenido {
+        border-right: 1px solid #cccccc; }
+      #tbl-resgistros-tr table tbody tr .tbl-monto-contenido {
+        border-right: 1px solid #cccccc;
+        text-align: right !important; }
+      #tbl-resgistros-tr table tbody tr .tbl-monto-ingreso {
+        color: #32970e !important; }
+      #tbl-resgistros-tr table tbody tr .tbl-deuda {
+        color: #ac3a3a; }
+      #tbl-resgistros-tr table tbody tr .btn {
+        margin: 0;
+        padding: 0;
+        width: 45%; }
+    #tbl-resgistros-tr table tbody tr:nth-child(2n+2) {
+      background: #e7e7e7; }
+    #tbl-resgistros-tr table tbody .tbl-cancelados {
+      color: #555555; }
+
+#legenda-tbl {
+  border: 2px solid #333333;
+  margin-bottom: 5em !important;
+  padding-bottom: 1em; }
+  #legenda-tbl h3 {
+    color: #222222;
+    font-size: 1.2em;
+    padding: 0 2.5% !important;
+    text-shadow: none; }
+  #legenda-tbl .verde {
+    color: #32970e; }
+  #legenda-tbl .rojo {
+    color: #ac3a3a; }
+  #legenda-tbl .cancelados {
+    color: #555555; }
+  #legenda-tbl p {
+    padding: 0 2.5% !important; }
+
+#transacciones-top, #transacciones-to {
+  margin: 1.5em 0 0 0; }
+  #transacciones-top label, #transacciones-top input, #transacciones-top a, #transacciones-top .top-tr, #transacciones-to label, #transacciones-to input, #transacciones-to a, #transacciones-to .top-tr {
     display: inline-block;
     vertical-align: top; }
-  #transacciones-top label {
+  #transacciones-top label, #transacciones-to label {
     font-size: 1.3em;
     margin-top: 0.2em; }
-  #transacciones-top input {
+  #transacciones-top input, #transacciones-to input {
     width: 20% !important; }
-  #transacciones-top .top-tr {
+  #transacciones-top .top-tr, #transacciones-to .top-tr {
     display: inline-block;
     margin-bottom: 1em; }
-  #transacciones-top .total-tr {
+  #transacciones-top .total-tr, #transacciones-to .total-tr {
     display: block;
     font-size: 1.2em;
     text-align: center; }
-  #transacciones-top .green {
+  #transacciones-top .green, #transacciones-to .green {
     color: #008e3c; }
-  #transacciones-top .red {
+  #transacciones-top .red, #transacciones-to .red {
     color: #c10000; }
+
+#transacciones-to {
+  margin: 0 0 0 0;
+  width: 25%; }
+
+#transacciones-to, #agregar-tr {
+  position: relative;
+  display: inline-block;
+  top: 3.8em;
+  vertical-align: top; }
 
 #total-pagar, .space-dp {
   margin-left: 3%; }
@@ -1493,7 +1711,7 @@ select {
     font-size: 1.2em; }
 
 #right-info-tr {
-  margin-left: 8.5%; }
+  margin: 4em 0 0 11%; }
 
 #search-data {
   margin: 4.5em 0; }
@@ -1509,33 +1727,6 @@ select {
 /*============================================================================================= */
 /*                                Media queries transacciones.php                              */
 /*============================================================================================= */
-@media (max-width: 1200px) {
-  #right-info-tr {
-    margin-left: 3%; }
-
-  #search-data input {
-    width: 69.5%; } }
-@media (min-width: 768px) and (max-width: 979px) {
-  #right-info-tr {
-    margin-left: 8%; }
-
-  #search-data input {
-    width: 60%; } }
-@media (max-width: 767px) {
-  #agregar-tr {
-    margin: -7em 3% 0 0; }
-    #agregar-tr a {
-      float: right; }
-
-  #data-grid {
-    margin-top: 1em !important; }
-
-  #right-info-tr {
-    margin: -4.5em 0 0 0 !important;
-    padding-bottom: 1em; }
-
-  #search-data, #datepicker {
-    display: none; } }
 @media (max-width: 480px) {
   #right-info-tr, #data-grid, #mostrando-tr, #datepicker {
     display: none !important; }
@@ -1553,10 +1744,15 @@ select {
   #tendencias-top h3 {
     color: #111111;
     text-shadow: none; }
+    #tendencias-top h3 .total-pagos-mes {
+      font-size: 0.7em; }
   #tendencias-top .data-tendencias-top {
     margin-top: -0.35em; }
     #tendencias-top .data-tendencias-top span {
       font-size: 1.4em; }
+    #tendencias-top .data-tendencias-top .pagos-mes {
+      display: block;
+      font-size: 1.2em; }
     #tendencias-top .data-tendencias-top .right {
       float: right; }
 
@@ -1566,28 +1762,77 @@ select {
 #slider-content {
   margin: 2em 0; }
 
-#meses span {
-  margin-left: 3.8%; }
+#tabla-gastos-tendencias h4 {
+  color: #111111;
+  padding: 0.2em 2%;
+  margin-bottom: 1.5em;
+  text-shadow: none; }
+#tabla-gastos-tendencias table {
+  float: right;
+  border: 2px solid #002222;
+  width: 100%; }
+  #tabla-gastos-tendencias table .cabecera {
+    background: #002222;
+    color: white; }
+  #tabla-gastos-tendencias table tr td {
+    padding: 0.2em 2%; }
+  #tabla-gastos-tendencias table tr .data-border-rg {
+    border-right: 2px solid #002222; }
+  #tabla-gastos-tendencias table tr .data-center {
+    text-align: center; }
+  #tabla-gastos-tendencias table tr:nth-child(2n+2) {
+    background: #dddddd; }
+
+#meses .febrero {
+  margin-left: 4.6%; }
 #meses .marzo {
-  margin-left: 4.8%; }
+  margin-left: 5.2%; }
 #meses .abril {
-  margin-left: 5.6%; }
+  margin-left: 6.1%; }
 #meses .mayo {
-  margin-left: 5.8%; }
+  margin-left: 6.4%; }
 #meses .junio {
-  margin-left: 5.7%; }
+  margin-left: 5.8%; }
 #meses .julio {
-  margin-left: 6%; }
+  margin-left: 6.1%; }
 #meses .agosto {
   margin-left: 5.7%; }
+#meses .sept {
+  margin-left: 4%; }
 #meses .oct {
-  margin-left: 3%; }
+  margin-left: 3.8%; }
 #meses .nov {
-  margin-left: 5.2%; }
+  margin-left: 3.5%; }
 #meses .dic {
-  margin-left: 6.1%; }
+  margin-left: 1.5%; }
 #meses .primer-mes {
-  margin-left: 0; }
+  margin-left: -7px; }
+
+#reporte {
+  margin: 5em 0 2em 0; }
+  #reporte #descarga-reporte a {
+    color: #333333;
+    float: right;
+    text-align: right; }
+    #reporte #descarga-reporte a h4 {
+      display: inline-block; }
+    #reporte #descarga-reporte a h4:hover {
+      text-decoration: underline; }
+  #reporte #descarga-reporte span {
+    background: url("../img/adobe-pdf-logo.png") no-repeat;
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    width: 32px; }
+
+#grafico-estadistico h4 {
+  color: #111111;
+  padding: 0.2em 2%;
+  margin-bottom: 1.5em;
+  text-shadow: none; }
+#grafico-estadistico .progress {
+  background: #dddddd !important; }
 
 /*============================================================================================= */
 /*                                  Media queries tendencias.php                               */

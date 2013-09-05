@@ -26,7 +26,7 @@
 	
 	if($archivo !=""){	
 		if($tipo=="image/jpeg"){
-			if($tamanio <= 1048576){
+			if($tamanio <= 2097152){
 				if (copy ($_FILES['fleImagen']['tmp_name'],$ruta)) {
 					if(subir_foto($ruta, $nombre_img, $descripcion_img)){
 						header('location: perfil.php');
@@ -37,7 +37,7 @@
 					echo"Hubo un error en la copia de su archivo";
 				}
 			}else{
-				echo "La imagen es mas pesada de lo permitido, peso maximo 1mb";
+				echo "La imagen es mas pesada de lo permitido, peso maximo 2mb";
 			}
 		}else{
 			echo "Su imagen no es un archivo de imagen valido, solo jpg, png, o gif son aceptados";

@@ -1,4 +1,0 @@
-FinanzasOnline
-==============
-
-Administracion financiera personal

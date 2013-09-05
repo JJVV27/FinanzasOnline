@@ -1,5 +1,0 @@
-Comida, 46.5
-Entretenimiento, 30.5
-Compras, 0.3
-Gastos varios, 18.0
-Salud, 4.7

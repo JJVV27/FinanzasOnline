@@ -1,9 +1,0 @@
-
-- transacciones.php
-
-
-- Pop Ups cambio de info a la bd
-- jQuery address, historial en tabs de la app
-- iconos de agregar en botones, pagina general
-- revisar librerias en cada pagina, eliminar las que no se usan
-

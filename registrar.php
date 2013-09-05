@@ -1,6 +1,6 @@
 <?php
 require_once('server/conexion.php');
-require_once('server/funciones.php');
+
 
 	$nombre = $_REQUEST ['nombre'];
 	$apellido = $_REQUEST ['apellido'];

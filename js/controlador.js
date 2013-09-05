@@ -2,41 +2,61 @@ $(document).on("ready", inicio);
 
 function inicio(){
 	activo();
+
+	var id_categoria = $('#select-categoria-tr').attr('value');
+
 	$('.btn-return').on("click", noreturn);
 	$('.mostrar-video').on("click", mostrarVideo);
 	$('.link-acercade').on("click", menuad);
+	$('#select-categoria-tr').on("change", obtenerCategoria);
 
-   //slider
+	$('#input-hidden').attr('value', id_categoria);
+
+	 if ($.trim( $('#alertas-contenedor').text() ).length === 0) {
+        $('#no-alertas').text('No hay alertas de pago por el momento');
+    }
 
 
-    
-    //tabs
+   //moneda
 
-    $("#nav li a").click(function() {
- 		
- 		var dt = $(this).attr('data-titulo');
- 		var dts = $(this).attr('data-subtitulo');
+  	var estilos = {
+  		background: '#c70000',
+  		border: "2px solid #b00000",
+  		color: '#eee',
+  		display: 'block',
+  		'font-size': '1.2em',
+  		margin: '0 auto',
+  		padding: '0.3em 8%'
+   }
 
-        $("#ajax-content").empty().append("<div id='loading'><img class='loader' src='img/loader.gif' alt='Loading' /></div>");
-        $("#nav li a").removeClass('current-tab');
-        $(this).addClass('current-tab');
+   var formEstilos = {
+   		background: '#222',
+   		border: '2px solid #111',
+   		display: 'block',
+   		margin: '0 auto',
+   		padding: '0.2em 5%',
+   		color: '#eee'
+   }
 
-        $.ajax({ url: this.href, success: function(html) {
-           	$("#ajax-content").empty().append(html);
-            $('.titulo-app').text(dt);
-            console.log(dts);
-             $('.subt-app').text(dts);
-           	
-            }
-    });
-	    return false;
-	    });
-	 
-	    $("#ajax-content").empty().append("<div id='loading'><img class='loader' src='img/loader.gif' alt='Loading' /></div>");
-	    $.ajax({ url: 'ajax/estado.php', success: function(html) {
-	            $("#ajax-content").empty().append(html);
-	    }
-	    });
+   var form = {
+   		display: 'inline-block',
+   		'vertical-align': 'middle',
+   		width: '30%'
+   }
+
+   var input ={
+   		width: '60%'
+   }
+
+   	$('.button-elmn').css(estilos);
+	$('.button-act-eg').css(formEstilos);	
+	$('.input-lbl-eg').css(form);	
+	$('.input-eg').css(input);	
+
+   	//btn-alerta
+
+   	$('.btn-alerta').on("click", cambioAlerta);
+
 
 	$(".edit").fancybox({
 		'titlePosition'		: 'inside',
@@ -56,6 +76,18 @@ function inicio(){
 		$('#cambio-img-perfil').attr('href', '#actualizar-imagen-perfil');
 	}
 
+	// ordenar tabla
+
+	$( "#slider" ).slider({
+      range: "max",
+      min: 1,
+      max: 12,
+      value: 2,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
 
 }
 
@@ -64,6 +96,20 @@ function activo(){
    .each(function(){ 
       $(this).addClass('activo');
    });
+}
+
+function cambioAlerta(){
+	$('.btn-alerta').removeClass('btn-default');
+	$(this).addClass('btn-default');
+
+	var valorAlerta = $(this).attr('value');
+
+	$('#input-alerta').attr('value', valorAlerta);
+	console.log(valorAlerta);
+}
+
+function cambioMoneda(){
+	alert('moneda');
 }
 
 function menuad(){
@@ -100,4 +146,9 @@ function noreturn(){
 
 function mostrarVideo(){
 	$('.video').slideDown();
+}
+
+function obtenerCategoria(){
+	id_categoria = $(this).attr('value');
+	$('#input-hidden').attr('value', id_categoria);
 }
