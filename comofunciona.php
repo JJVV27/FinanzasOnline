@@ -25,14 +25,15 @@
 					</div>
 				</div>
 				<div class="video">		
-					<video controls poster="img/logo.png">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/LDsb2qlglrU" frameborder="0" allowfullscreen></iframe>
+					<!--<video controls poster="img/logo.png">
 						   <source src="video/motion.ogv" type="video/ogg" />
 						   <source src="video/motion.mp4" type="video/mp4" />    
 						   <object type="application/x-shockwave-flash" width="360" height="240" data="player.swf?file=archivo.mp4">
 						      <param name="movie" value="player.swf?file=archivo.mp4" />
 						      <a href="video/motion.mp4">Descarga la película</a>
 						   </object>
-					</video>
+					</video>-->
 				</div>
 			</div>
 			<section id="funciones" class="row-fluid">
