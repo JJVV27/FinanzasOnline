@@ -998,26 +998,26 @@ select {
   margin: 3em 0;
   padding: 1.5em 0; }
 
-#tbl-egresos-fijos {
+#tbl-egresos-fijos, #tbl-ctg {
   text-align: center;
   padding: 0 5%;
   width: 100%; }
-  #tbl-egresos-fijos thead th {
+  #tbl-egresos-fijos thead th, #tbl-ctg thead th {
     border: none !important; }
-    #tbl-egresos-fijos thead th .tbl-title {
+    #tbl-egresos-fijos thead th .tbl-title, #tbl-ctg thead th .tbl-title {
       display: block;
       font-size: 1.5em;
       padding-bottom: 1em; }
-  #tbl-egresos-fijos thead tr {
+  #tbl-egresos-fijos thead tr, #tbl-ctg thead tr {
     border-bottom: 1px solid #333333; }
-    #tbl-egresos-fijos thead tr td {
+    #tbl-egresos-fijos thead tr td, #tbl-ctg thead tr td {
       font-size: 1.2em;
       font-weight: 700;
       padding: 0.8em 0; }
-  #tbl-egresos-fijos tbody tr td .edt-elmn {
+  #tbl-egresos-fijos tbody tr td .edt-elmn, #tbl-ctg tbody tr td .edt-elmn {
     display: block;
     text-decoration: underline; }
-  #tbl-egresos-fijos tbody tr:nth-child(2n+2) {
+  #tbl-egresos-fijos tbody tr:nth-child(2n+2), #tbl-ctg tbody tr:nth-child(2n+2) {
     background: #e7e7e7; }
 
 #agregar-egreso legend {
